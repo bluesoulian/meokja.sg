@@ -5,12 +5,40 @@ const tansuYuk =23;
 const jajangset = jajangprice*2 + tansuYuk -5;
 const jjampongset = jampongprice*2 + tansuYuk -5;
 const jjamjjaset = jajangprice + jampongprice + tansuYuk -5;
-const insideyishun = 5;
-const outsideyishun = 10;
 
   const getprice = () =>{
 
     //delivery fee
+
+    //pick up
+
+    const countitemP = document.querySelector(".countitemP").value;
+    const totalpriceP = 0*countitemP;
+    document.querySelector(".priceshowingP").innerHTML = totalpriceP+"$";
+
+    if(document.querySelector('.priceshowingP').innerHTML === '0$'){
+      document.querySelector('.customer_orderP').value = "YesPickUp"}
+    else {document.querySelector('.customer_orderP').value = ""}
+
+    //outside
+
+    const countitemO = document.querySelector(".countitemO").value;
+    const totalpriceO = 10*countitemO;
+    document.querySelector(".priceshowingO").innerHTML = totalpriceO+"$";
+
+    if(document.querySelector('.priceshowingO').innerHTML === '10$'){
+      document.querySelector('.customer_orderO').value = "Outside"}
+    else {document.querySelector('.customer_orderO').value = ""}
+
+    //inside 
+
+    const countitemY = document.querySelector(".countitemY").value;
+    const totalpriceY = 5*countitemY;
+    document.querySelector(".priceshowingY").innerHTML = totalpriceY+"$";
+
+    if(document.querySelector('.priceshowingY').innerHTML === '5$'){
+      document.querySelector('.customer_orderY').value = "YesYishun"}
+    else {document.querySelector('.customer_orderY').value = ""}
 
 
     //짜장면
@@ -118,9 +146,13 @@ const outsideyishun = 10;
     
 
     //합친가격 및 디테일
+
     
-    let sumup = totalprice + totalprice2 + totalprice3 +
+    
+    let sumup = totalpriceY + totalpriceP + totalpriceO +
+                totalprice + totalprice2 + totalprice3 +
                 totalprice4 + totalprice5 + totalprice6;
+                
     
     document.querySelector('.sumup').value = sumup;
 
