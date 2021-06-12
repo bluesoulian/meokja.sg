@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="order.css">
+    <script src="order.js" defer></script>
+    <title>Email Form</title>
+</head>
+<body>
+    
+    <form action="https://formsubmit.co/kcu.meokjasg@gmail.com" method="POST" class="form" autocomplete="off">
+        
+        <div class="logoandorder">
+            <img src="images/logo1.png">
+            <h2>Order Form</h2>
+        </div>
+        <div class="menus">
+            <div class="jajangmeyon">
+                <div class="img"><img src="images/jajangmeyon.jpg"></div>
+                <div class='select'>
+                    <label>Jjajangmyeon 10$</label> 
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem" onkeydown="return false" onclick="getprice()">
+                    <span class="priceshowing"><sapn/>
+                </div>
+            </div>
+            <div class="jjampyong">
+                <div class="img"><img src="images/jjamppong.jpg"></div>
+                <div class="select">
+                    <label>Jjamppong 15$</label> 
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem2" onkeydown="return false" onclick="getprice()">
+                    <span class="priceshowing2"></span>
+                </div>
+            </div>
+            <div class="TansuYuk">
+                <div class="img"><img src="images/tansuyouk.jpg"></div>
+                <div class="select">
+                    <label>Tangsuyuk 23$</label> 
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem3" onkeydown="return false" onclick="getprice()">
+                    <span class="priceshowing3"></span>
+                </div>
+            </div>
+            <div class="JjajangSet">
+                <div class="img"><img src="images/tansuyouk.jpg"></div>
+                <div class="select">
+                    <label>Jjajangset 38$</label> 
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem4" onkeydown="return false" onclick="getprice()">
+                    <span class="priceshowing4"></span>
+                </div>
+            </div>
+            <div class="JjampongSet">
+                <div class="img"><img src="images/tansuyouk.jpg"></div>
+                <div class="select">
+                    <label>JjampongSet 48$</label> 
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem5" onkeydown="return false" onclick="getprice()">
+                    <span class="priceshowing5"></span>
+                </div>
+            </div>
+            <div class="JjamJjaSet">
+                <div class="img"><img src="images/tansuyouk.jpg"></div>
+                <div class="select">
+                    <label>JjamJjaset 43$</label> 
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem6" onkeydown="return false" onclick="getprice()">
+                    <span class="priceshowing6"></span>
+                </div>
+            </div>
+        </div>
+
+        <span class="please">Fill Up Your Order form Please</span>
+        <div class="info">
+            <input type="hidden" name="_next" value="https://bluesoulian.github.io/meokja.sg/invoice.html">
+            <label>Name</label>
+            <input type="text" name="customer_name" placeholder="write your name here" required>
+            <label>Address</label>
+            <input type="text" name="customer_address" placeholder="write your address here" required>
+            <label>ContactNumber</label>
+            <input type="text" name="customer_contactnumber" placeholder="write your contactnumber here" required>
+            <label>EmailAddress</label>
+            <input type="text" name="customer_email" placeholder="write your e-mail here" required>
+            <label>DayofDelivery</label>
+            <input list="days" name="Delivery_date" required onkeydown="return false">
+            <datalist id="days">
+                <option value="june 22, 2021">
+                <option value="june 23, 2021">
+                <option value="june 25, 2021">
+                <option value="june 26, 2021">
+                <option value="june 27, 2021">
+            </datalist>
+            <label>Select the delivery place</label>
+            <input list="inorout" name="Delivery_inorout" required onkeydown="return false">
+            <datalist id="inorout">
+                <option value="inside Yishun">
+                <option value="outside Yishun">
+            </datalist>
+            <div class="totalbox">
+                <span>total:</span>
+                <input type="text" name="customer_sumup" required class="sumup" onkeydown="return false">
+            </div>
+            <button type="submit">Send</button>
+        </div>
+        <div class="invoice">
+            <span class="check">Please Check Out Your Details Again</span>
+            <input type="text" name="customer_jjajang" class="customer_order" onclick="getprice()">
+            <input type="text" name="customer_jjamppong" class="customer_order2" onclick="getprice()">
+            <input type="text" name="customer_tangsuyuk" class="customer_order3" onclick="getprice()">
+            <input type="text" name="customer_jjajangset" class="customer_order4" onclick="getprice()">
+            <input type="text" name="customer_jjampongset" class="customer_order5" onclick="getprice()">
+            <input type="text" name="customer_jjamjjagset" class="customer_order6" onclick="getprice()">
+        </div>
+
+   </form>
+    
+        
+</body>
+</html>

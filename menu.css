@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+  :root {  /*color preset*/    
+    --red-color: #ff0f0f;
+    --white-color: #fcf7f7;
+    --green-color: #36f221;
+    --black-color: #181710;
+    --blue-color: #0004f5;
+    --a-color: #e8e005;
+
+    --padding: 8px 12px;
+  }
+
+body {
+  color: black;
+  background-color: #212121;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+/* body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+} */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--black-color);
+  font-family: Fredericka the Great;
+  align-items: center;
+}
+
+/*네비게이션 바의 로고랑 타이틀 설정*/
+
+.navbar .logoandtitle {
+  display: flex;
+  align-items: center;
+  color: var(--white-color)
+}
+
+.navbar .logoandtitle .mlogo{
+  width: 2.7rem;
+}
+
+
+.navbar .logoandtitle .title{
+  font-size: 25px;
+}
+
+.navbar .pcicons{
+  display: none;
+}
+
+.navbar .icons{
+     font-size: 23px;
+     text-align: center;
+ }
+
+ .navbar .icons .instagram{
+   color:var(--red-color);
+ }
+ 
+ .navbar .icons .whatsapp{
+     color: var(--green-color);
+ }
+
+ .navbar .icons .facebook{
+     color: var(--blue-color);
+ }
+
+
+
+
+
+.container{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  
+}
+
+.container .card{
+  
+  width: 260px;
+  height: 215px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  transition: 0.3s ease-in-out;
+  
+}
+
+.container .card:hover{
+  height: 420px;
+}
+
+.container .card .imgBx{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  
+ 
+}
+
+.container .card .imgBx img{
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+ 
+}
+
+.container .card .content{
+  
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -85px;
+  transition-delay: 0.3s;
+}
+
+.container .card .content .ingredient {
+  font-size: 0.7rem;
+}
+
+.menubar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--black-color);
+  background-color: rgba(0, 0, 0, 0.3); /*부모만 opacity주기*/
+  font-size: 30px;
+  font-family: Fredericka the Great;
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  color: var(--white-color);
+  
+
+}
+
+
+.menubar a {
+  cursor:pointer;
+  text-align: center;
+  padding: 4px;
+  opacity: 1;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+.menubar a:hover {
+    background-color: rgb(180, 58, 36);
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.menubar.active{
+  display: none;
+}
+
+.onoff{
+  cursor: pointer;
+  position: sticky;
+  bottom: 13.8rem;
+  
+  color: var(--white-color);
+
+}
+
+.onoff i{
+  font-size: 2rem;
+  
+}
+
+.onoff .arrow.clicked{
+  transform: rotate(270deg);
+}
+
+@media screen and (min-width: 768px) {
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 100vh;
+   
+  }
+
+  .menubar{
+    width: 20vw;
+    
+    left: 40vw;
+  }
+
+  .menubar{
+    border-radius: 10px
+  }
+
+  .onoff{
+    left: 40vw;
+  }
+
+  .onoff.clicked{
+    left: 0;
+  }
+}
