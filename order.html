@@ -17,6 +17,30 @@
             <h2>Order Form</h2>
         </div>
         <div class="menus">
+            <div class="outsideYishun">
+                <div class="img"><img src="images/jajangmeyon.jpg"></div>
+                <div class='select'>
+                    <label>outsideYishun</label> 
+                    <input type="number" placeholder="0" min="0" max="1" class="countitemO" onkeydown="return false" onclick="getprice()">
+                    <span class="priceshowingO"><sapn/>
+                </div>
+            </div>
+            <div class="insideYishun">
+                <div class="img"><img src="images/jajangmeyon.jpg"></div>
+                <div class='select'>
+                    <label>insideYishun</label> 
+                    <input type="number" placeholder="0" min="0" max="1" class="countitemY" onkeydown="return false" onclick="getprice()">
+                    <span class="priceshowingY"><sapn/>
+                </div>
+            </div>
+            <div class="pickup">
+                <div class="img"><img src="images/jajangmeyon.jpg"></div>
+                <div class='select'>
+                    <label>pickup</label> 
+                    <input type="number" placeholder="0" min="0" max="1" class="countitemP" onkeydown="return false" onclick="getprice()">
+                    <span class="priceshowingP"><sapn/>
+                </div>
+            </div>
             <div class="jajangmeyon">
                 <div class="img"><img src="images/jajangmeyon.jpg"></div>
                 <div class='select'>
@@ -87,11 +111,12 @@
                 <option value="june 26, 2021">
                 <option value="june 27, 2021">
             </datalist>
-            <label>Select the delivery place</label>
-            <input list="inorout" name="Delivery_inorout" required onkeydown="return false">
-            <datalist id="inorout">
-                <option value="inside Yishun">
-                <option value="outside Yishun">
+            <label>DeliveryTime</label>
+            <input list="time" name="Delivery_date" required onkeydown="return false">
+            <datalist id="time">
+                <option value="Delivery 5:30pm - 7:00pm">
+                <option value="Delivery 7:00pm - 8:00pm">
+                <option value="PickUp 6:00pm - 8:00pm">
             </datalist>
             <div class="totalbox">
                 <span>total:</span>
@@ -101,6 +126,9 @@
         </div>
         <div class="invoice">
             <span class="check">Please Check Out Your Details Again</span>
+            <input type="text" name="customer_ifisout" class="customer_orderO" onclick="getprice()">
+            <input type="text" name="customer_ifisYishun" class="customer_orderY" onclick="getprice()">
+            <input type="text" name="customer_ifisPickup" class="customer_orderP" onclick="getprice()">
             <input type="text" name="customer_jjajang" class="customer_order" onclick="getprice()">
             <input type="text" name="customer_jjamppong" class="customer_order2" onclick="getprice()">
             <input type="text" name="customer_tangsuyuk" class="customer_order3" onclick="getprice()">
