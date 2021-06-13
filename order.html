@@ -11,7 +11,7 @@
 <body>
     
     <form action="https://formsubmit.co/kcu.meokjasg@gmail.com" method="POST" class="form" autocomplete="off">
-        
+        <input type="hidden" name="_captcha" value="false">
         <div class="logoandorder">
             <img src="images/logo1.png">
             <h2>Order Form</h2>
@@ -104,6 +104,7 @@
             <input type="text" name="customer_email" placeholder="write your e-mail here" required>
             <label>DayofDelivery</label>
             <input list="days" name="Delivery_date" required onkeydown="return false">
+            
             <datalist id="days">
                 <option value="june 22, 2021">
                 <option value="june 23, 2021">
@@ -121,23 +122,24 @@
             <div class="totalbox">
                 <span>total:</span>
                 <input type="text" name="customer_sumup" required class="sumup" onkeydown="return false">
+                <button type="submit" value="click" onclick="passvalue(), passvalue2()">submit</button>
             </div>
-            <button type="submit">Send</button>
-        </div>
-        <div class="invoice">
-            <span class="check">Please Check Out Your Details Again</span>
-            <input type="text" name="customer_ifisout" class="customer_orderO" onclick="getprice()">
-            <input type="text" name="customer_ifisYishun" class="customer_orderY" onclick="getprice()">
-            <input type="text" name="customer_ifisPickup" class="customer_orderP" onclick="getprice()">
-            <input type="text" name="customer_jjajang" class="customer_order" onclick="getprice()">
-            <input type="text" name="customer_jjamppong" class="customer_order2" onclick="getprice()">
-            <input type="text" name="customer_tangsuyuk" class="customer_order3" onclick="getprice()">
-            <input type="text" name="customer_jjajangset" class="customer_order4" onclick="getprice()">
-            <input type="text" name="customer_jjampongset" class="customer_order5" onclick="getprice()">
-            <input type="text" name="customer_jjamjjagset" class="customer_order6" onclick="getprice()">
-        </div>
 
+        </div>
    </form>
+   <form action="invoice.html" class="invoice">
+    <span class="check">Please Check Out Your Details Again</span>
+    <input type="text" name="customer_ifisout" class="customer_orderO" onclick="getprice()">
+    <input type="text" name="customer_ifisYishun" class="customer_orderY" onclick="getprice()">
+    <input type="text" name="customer_ifisPickup" class="customer_orderP" onclick="getprice()">
+    <input type="text" name="customer_jjajang" class="customer_order" onclick="getprice()">
+    <input type="text" name="customer_jjamppong" class="customer_order2" onclick="getprice()">
+    <input type="text" name="customer_tangsuyuk" class="customer_order3" onclick="getprice()">
+    <input type="text" name="customer_jjajangset" class="customer_order4" onclick="getprice()">
+    <input type="text" name="customer_jjampongset" class="customer_order5" onclick="getprice()">
+    <input type="text" name="customer_jjamjjagset" class="customer_order6" onclick="getprice()">
+</form>
+
     
         
 </body>

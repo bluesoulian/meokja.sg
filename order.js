@@ -17,7 +17,7 @@ const jjamjjaset = jajangprice + jampongprice + tansuYuk -5;
     document.querySelector(".priceshowingP").innerHTML = totalpriceP+"$";
 
     if(document.querySelector('.priceshowingP').innerHTML === '0$'){
-      document.querySelector('.customer_orderP').value = "YesPickUp"}
+      document.querySelector('.customer_orderP').value = ""}
     else {document.querySelector('.customer_orderP').value = ""}
 
     //outside
@@ -157,7 +157,18 @@ const jjamjjaset = jajangprice + jampongprice + tansuYuk -5;
     document.querySelector('.sumup').value = sumup;
 
     //인사이드
-
-
-    
 }
+
+
+function passvalue(){
+  const invoice = document.querySelector('.customer_order').value; 
+  localStorage.setItem("jjajang", invoice);
+  return false;
+}
+
+function passvalue2(){
+  const invoice2 = document.querySelector('.customer_order2').value;
+  localStorage.setItem("jjamppong", invoice2)
+  return false;
+}
+
