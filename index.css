@@ -210,7 +210,7 @@ ul {
   color: #eee;
   padding: 0.7rem 0;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -220,8 +220,19 @@ ul {
   animation: hide 0.5s forwards ease;
 }
 
-.links a:hover {
+.links li:hover {
   color: #fff;
+  transform: scale(1.2);
+}
+
+.links li a:hover {
+  font-size:0;   
+  transition: 5ms;
+}
+
+.links li a:hover:after {
+  content: attr(data-hover);
+  font-size: 2rem;
 }
 
 .container.active .links a {
@@ -326,12 +337,17 @@ ul {
   }
 
   .container.active {
+    
     background-image: none;
     transition: 0.3s;
+    background-image: url('/images/homeimg4.jpg');
+    background-position-y: 70px;
+    background-repeat: no-repeat;
   }
 
   .main-container {
     display: none;
+    
   }
 
   .links {
@@ -340,20 +356,33 @@ ul {
     align-items: center;
     width: 100vw;
     text-align: center;
+    
   }
 
   .container.active .links {
     display: flex;
+    background-color:rgba(43, 51, 59, 0.3);
   }
 
   .links li a {
     font-size: 1.5rem;
+
+   
   }
 
-  .links li:hover {
+
+  .links li a:hover {
     background-color: var(--red-color);
-    border-radius: 10px;
+    font-size:0;   
+    transition: 5ms; 
     width: 80vw;
-    transform: scale(1.2);
+    border-radius: 10px;
   }
+
+  .links li a:hover:after {
+    content: attr(data-hover);
+    font-size: 2rem;
+  }
+
+
 }

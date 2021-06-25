@@ -8,39 +8,6 @@ const jjamjjaset = jajangprice + jampongprice + tansuYuk -5;
 
   const getprice = () =>{
 
-    //delivery fee
-
-    //pick up
-
-    const countitemP = document.querySelector(".countitemP").value;
-    const totalpriceP = 0*countitemP;
-    document.querySelector(".priceshowingP").innerHTML = totalpriceP+"$";
-
-    if(document.querySelector('.priceshowingP').innerHTML === '0$'){
-      document.querySelector('.customer_orderP').value = ""}
-    else {document.querySelector('.customer_orderP').value = ""}
-
-    //outside
-
-    const countitemO = document.querySelector(".countitemO").value;
-    const totalpriceO = 10*countitemO;
-    document.querySelector(".priceshowingO").innerHTML = totalpriceO+"$";
-
-    if(document.querySelector('.priceshowingO').innerHTML === '10$'){
-      document.querySelector('.customer_orderO').value = "Outside"}
-    else {document.querySelector('.customer_orderO').value = ""}
-
-    //inside 
-
-    const countitemY = document.querySelector(".countitemY").value;
-    const totalpriceY = 5*countitemY;
-    document.querySelector(".priceshowingY").innerHTML = totalpriceY+"$";
-
-    if(document.querySelector('.priceshowingY').innerHTML === '5$'){
-      document.querySelector('.customer_orderY').value = "YesYishun"}
-    else {document.querySelector('.customer_orderY').value = ""}
-
-
     //짜장면
     const countitem = document.querySelector(".countitem").value;
     const totalprice = jajangprice*countitem;
@@ -146,29 +113,21 @@ const jjamjjaset = jajangprice + jampongprice + tansuYuk -5;
     
 
     //합친가격 및 디테일
-
     
-    
-    let sumup = totalpriceY + totalpriceP + totalpriceO +
-                totalprice + totalprice2 + totalprice3 +
+    const sumup = totalprice + totalprice2 + totalprice3 +
                 totalprice4 + totalprice5 + totalprice6;
                 
     
     document.querySelector('.sumup').value = sumup;
 
-    //인사이드
+    //인사이드 리미트
+
+    if(document.querySelector('.sumup').value < 25) {
+      document.querySelector('.submit').disabled = true;
+   }else if(document.querySelector('.sumup').value >= 25) {
+    document.querySelector('.submit').disabled = false;
+   }
+
 }
 
-
-function passvalue(){
-  const invoice = document.querySelector('.customer_order').value; 
-  localStorage.setItem("jjajang", invoice);
-  return false;
-}
-
-function passvalue2(){
-  const invoice2 = document.querySelector('.customer_order2').value;
-  localStorage.setItem("jjamppong", invoice2)
-  return false;
-}
 

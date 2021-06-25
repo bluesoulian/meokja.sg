@@ -36,7 +36,7 @@ html, body{
     background-color: var(--black-color);
     height: 70px;
     font-family: Fredericka the Great;
-    width: 100%;
+    width: 95%;
     
   }
   
@@ -192,18 +192,6 @@ html, body{
 }
 
 
-/*
-ul{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    margin: 0;
-    padding: 0;
-  나중에 컴퓨터
-}
-*/
 
 @media screen and (min-width: 768px) {
   

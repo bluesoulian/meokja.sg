@@ -10,7 +10,9 @@
     --padding: 8px 12px;
   }
 
+
 body {
+  
   color: black;
   background-color: #212121;
   margin: 0;
@@ -180,15 +182,21 @@ body::-webkit-scrollbar-thumb {
   opacity: 1;
   position: sticky;
   bottom: 0;
-  width: 100%;
+  width: 95%;
   
 }
 
 .menubar a:hover {
     background-color: rgb(180, 58, 36);
     border-radius: 10px;
-    font-size: 40px;
+    font-size: 0;
 }
+
+.menubar a:hover:after {
+  content: attr(data-hover);
+  font-size: 2rem;
+}
+
 
 .menubar.active{
   display: none;
