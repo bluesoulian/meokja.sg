@@ -12,7 +12,7 @@ const InYishun = 5;
     const countitem = document.querySelector(".countitem").value;
     const totalprice = jajangprice*countitem;
     document.querySelector(".priceshowing").innerHTML = totalprice+"$";
-   
+      
       if(document.querySelector('.priceshowing').innerHTML === '10$'){
         document.querySelector('.customer_order').value = "Jajang1"}
       else if(document.querySelector('.priceshowing').innerHTML === '20$')
@@ -25,10 +25,12 @@ const InYishun = 5;
       {document.querySelector('.customer_order').value = "Jajang5"}
       else {document.querySelector('.customer_order').value = ""}
 
+
     //짬뽕
     const countitem2 = document.querySelector(".countitem2").value;
     const totalprice2 = jampongprice*countitem2;
     document.querySelector(".priceshowing2").innerHTML = totalprice2+"$";
+
 
       if(document.querySelector('.priceshowing2').innerHTML === '15$'){
         document.querySelector('.customer_order2').value = "Jjamppong1"}
@@ -78,6 +80,7 @@ const InYishun = 5;
 
 
     //짬뽕셋
+
     const countitem5 = document.querySelector(".countitem5").value;
     const totalprice5 = jjampongset*countitem5;
     document.querySelector(".priceshowing5").innerHTML = totalprice5+"$";
@@ -110,6 +113,8 @@ const InYishun = 5;
     else if(document.querySelector('.priceshowing6').innerHTML === '215$')
     {document.querySelector('.customer_order6').value = "jjamjjaset5"}
     else {document.querySelector('.customer_order6').value = ""}
+
+
     
 
     //합친가격 및 디테일
@@ -123,7 +128,41 @@ const InYishun = 5;
     totalprice4 + totalprice5 + totalprice6;
 
     document.querySelector('.sumup2').value = sumup2;
-    
+
+    //수량 5개 이상 입력시
+
+    if(document.querySelector('.countitem').value > 5) {
+      document.querySelector('.countitem').value = ""
+      document.querySelector('.priceshowing').innerHTML = ""
+      document.querySelector('.sumup2').value = ""
+    }
+    if(document.querySelector('.countitem2').value > 5) {
+      document.querySelector('.countitem2').value = ""
+      document.querySelector('.priceshowing2').innerHTML = ""
+      document.querySelector('.sumup2').value = ""
+    }
+    if(document.querySelector('.countitem3').value > 5) {
+      document.querySelector('.countitem3').value = ""
+      document.querySelector('.priceshowing3').innerHTML = ""
+      document.querySelector('.sumup2').value = ""
+    }
+        
+    if(document.querySelector('.countitem4').value > 5) {
+      document.querySelector('.countitem4').value = ""
+      document.querySelector('.priceshowing4').innerHTML = ""
+      document.querySelector('.sumup2').value = ""
+    }
+        
+    if(document.querySelector('.countitem5').value > 5) {
+      document.querySelector('.countitem5').value = ""
+      document.querySelector('.priceshowing5').innerHTML = ""
+      document.querySelector('.sumup2').value = ""
+    }
+    if(document.querySelector('.countitem6').value > 5) {
+      document.querySelector('.countitem6').value = ""
+      document.querySelector('.priceshowing6').innerHTML = ""
+      document.querySelector('.sumup2').value = ""
+    }
  
 
     //인사이드 리미트
@@ -173,3 +212,4 @@ document.querySelector('.next').addEventListener('click', ()=>{
   document.querySelector('.menus').classList.toggle("clicked")
   document.querySelector('.totalbox2').classList.toggle("clicked")
 });
+
