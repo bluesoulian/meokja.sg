@@ -294,11 +294,9 @@ input[type='number']::-webkit-inner-spin-button {
   height: 30px;
   opacity: 1;
   cursor: pointer;
-  -webkit-appearance: menulist;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button{
-  opacity: 1;
-  -webkit-appearance: menulist;
+input[type=number]::-webkit-textfield-decoration-container {
+  border: 1px #ccc solid;
+  background: #efefef;
 }
