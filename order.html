@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link rel="stylesheet" href="order.css">
     <script src="order.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Email Form</title>
 </head>
 <body>
@@ -17,12 +18,11 @@
             <h2>Order Form</h2>
         </div>
         <div class="menus">
-
             <div class="jajangmeyon">
                 <div class="img"><img src="images/jajangmeyon.jpg"></div>
                 <div class='select'>
                     <label>Jjajangmyeon $10</label> 
-                    <input type="number" placeholder="0" min="0" max="5" class="countitem" onkeydown="return false" onclick="getprice()">
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem"  onclick="getprice()">
                     <span class="priceshowing"><sapn/>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                 <div class="img"><img src="images/jjamppong.jpg"></div>
                 <div class="select">
                     <label>Jjamppong $15</label> 
-                    <input type="number" placeholder="0" min="0" max="5" class="countitem2" onkeydown="return false" onclick="getprice()">
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem2"  onclick="getprice()">
                     <span class="priceshowing2"></span>
                 </div>
             </div>
@@ -38,7 +38,8 @@
                 <div class="img"><img src="images/tansuyouk.jpg"></div>
                 <div class="select">
                     <label>Tangsuyuk $23</label> 
-                    <input type="number" placeholder="0" min="0" max="5" class="countitem3" onkeydown="return false" onclick="getprice()">
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem3" onclick="getprice()">
+
                     <span class="priceshowing3"></span>
                 </div>
             </div>
@@ -46,7 +47,7 @@
                 <div class="img"><img src="images/tansuyouk.jpg"></div>
                 <div class="select">
                     <label>Jjajangset $38</label> 
-                    <input type="number" placeholder="0" min="0" max="5" class="countitem4" onkeydown="return false" onclick="getprice()">
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem4"  onclick="getprice()">
                     <span class="priceshowing4"></span>
                 </div>
             </div>
@@ -54,7 +55,7 @@
                 <div class="img"><img src="images/tansuyouk.jpg"></div>
                 <div class="select">
                     <label>JjampongSet $48</label> 
-                    <input type="number" placeholder="0" min="0" max="5" class="countitem5" onkeydown="return false" onclick="getprice()">
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem5"  onclick="getprice()">
                     <span class="priceshowing5"></span>
                 </div>
             </div>
@@ -62,11 +63,12 @@
                 <div class="img"><img src="images/tansuyouk.jpg"></div>
                 <div class="select">
                     <label>JjamJjaset $43</label> 
-                    <input type="number" placeholder="0" min="0" max="5" class="countitem6" onkeydown="return false" onclick="getprice()">
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem6" onclick="getprice()">
                     <span class="priceshowing6"></span>
                 </div>
             </div>
         </div>
+        <button class="ok" onclick="getprice()">OK</button>
         <div class="totalbox2">
             <span>total:</span>
             <input type="text" name="customer_sumup" required class="sumup2" onkeydown="return false">
