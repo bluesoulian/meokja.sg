@@ -3,7 +3,6 @@
   margin: 0;
 }
 
-
 .form {
   display: flex;
   flex-direction: column;
@@ -11,8 +10,6 @@
   align-items: center;
   max-width: 800px;
   margin: 0 auto;
-
-  
 }
 
 .form .logoandorder {
@@ -62,10 +59,9 @@
   width: 95%;
 }
 
-.form .info.clicked{
+.form .info.clicked {
   display: flex;
 }
-
 
 .form .info label {
   font-size: 0.8rem;
@@ -222,15 +218,9 @@
   display: none;
 }
 
-
 .invoice {
   display: flex;
   flex-direction: column;
-}
-
-.sumup {
-  border: flex;
-  width: 10%;
 }
 
 .totalbox {
@@ -240,18 +230,55 @@
   text-align: center;
 }
 
-.check{
+.sumup {
+  width: 20%;
+}
+
+.deliveryBox {
+  position: relative;
+  width: 100%;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.dsumup {
+  width: 20%;
+}
+
+.superTotal {
+  position: relative;
+  width: 100%;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.ssumup {
+  width: 20%;
+}
+
+.totalbox2 {
+  position: relative;
+  width: 100%;
+  font-weight: 1000;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.totalbox2.clicked {
+  display: none;
+}
+
+.check {
   display: none;
   flex-direction: column;
   border: dotted 0.1px grey;
 }
 
 .check.clicked {
-  display: flex
+  display: flex;
 }
 
-
-.check input{
+.check input {
   margin-top: 0.1rem;
 }
 

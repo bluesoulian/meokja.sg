@@ -66,6 +66,10 @@
                 </div>
             </div>
         </div>
+        <div class="totalbox2">
+            <span>total:</span>
+            <input type="text" name="customer_sumup" required class="sumup2" onkeydown="return false">
+        </div>
 
         <button class="next" disabled>next</button>
 
@@ -83,7 +87,7 @@
             
             <label for="Delivery_options">Delivery_options</label>
             <select id="Delivery_options" name="Delivery_way" required onchange="addDeliver()" disabled>
-                <option value="none" selected disabled hidden>
+                <option disabled selected value>
                     Select an Option
                 </option>
                 <option value="InYishun"> Inside Yishun </option>
@@ -94,7 +98,7 @@
             
             <label for="days">DayofDelivery</label>
             <select id="days" name="Delivery_date" required>
-                <option value="none" selected disabled hidden>
+                <option disabled selected value>
                     Select an Option
                 </option>
                 <option value="june 22 2021"> june 22, 2021 </option>
@@ -108,7 +112,7 @@
 
             <label for="time">DeliveryTime</label>
             <select id="time" name="Delivery_time" required>
-                <option value="none" selected disabled hidden>
+                <option disabled selected value>
                     Select an Option
                 </option>
                 <option value="Delivery 5:30pm - 7:00pm"> Delivery 5:30pm - 7:00pm </option>
@@ -126,9 +130,17 @@
             <input type="text" name="customer_jjajangset" class="customer_order4" onclick="getprice()" onkeydown="return false">
             <input type="text" name="customer_jjampongset" class="customer_order5" onclick="getprice()" onkeydown="return false">
             <input type="text" name="customer_jjamjjagset" class="customer_order6" onclick="getprice()" onkeydown="return false">
+            <div class="deliveryBox">
+                <span>Delivery Total:</span>
+                <input type="text" name="delivery_price" required class="dsumup" onkeydown="return false">
+            </div>
             <div class="totalbox">
-                <span>total:</span>
+                <span>Food Total:</span>
                 <input type="text" name="customer_sumup" required class="sumup" onkeydown="return false">
+            </div>
+            <div class="superTotal">
+                <span>AllTogether:</span>
+                <input type="text" name="SumAllTogether" required class="ssumup" onkeydown="return false">
             </div>
         </div>
             <button class="submit" disabled onclick="limit()">submit</button>

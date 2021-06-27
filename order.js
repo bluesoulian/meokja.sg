@@ -118,6 +118,11 @@ const InYishun = 5;
                 totalprice4 + totalprice5 + totalprice6;
     
     document.querySelector('.sumup').value = sumup;
+
+    const sumup2 = totalprice + totalprice2 + totalprice3 +
+    totalprice4 + totalprice5 + totalprice6;
+
+    document.querySelector('.sumup2').value = sumup2;
     
  
 
@@ -140,21 +145,21 @@ function addDeliver() {
 
     if (document.getElementById("Delivery_options").value === "InYishun") {
       let totalfood = document.querySelector('.sumup').value
-      let totalfood2 = parseInt(totalfood, 10) + 5
-      document.querySelector('.sumup').value = totalfood2
-      document.getElementById('Delivery_options').disabled = true; 
+      let totalfood2 = parseInt(totalfood, 10)
+      document.querySelector('.dsumup').value = 5;
+      document.querySelector('.ssumup').value = totalfood2 + 5;
     }
     else if (document.getElementById("Delivery_options").value === "OutYishun") {
       let totalfood = document.querySelector('.sumup').value
-      let totalfood2 = parseInt(totalfood, 10) + 10
-      document.querySelector('.sumup').value = totalfood2
-      document.getElementById('Delivery_options').disabled = true; 
+      let totalfood2 = parseInt(totalfood, 10)
+      document.querySelector('.dsumup').value = 10; 
+      document.querySelector('.ssumup').value = totalfood2 + 10;
     }
     else if (document.getElementById("Delivery_options").value === "PickUp") {
       let totalfood = document.querySelector('.sumup').value
       let totalfood2 = parseInt(totalfood, 10)
-      document.querySelector('.sumup').value = totalfood2
-      document.getElementById('Delivery_options').disabled = true; 
+      document.querySelector('.dsumup').value = 0; 
+      document.querySelector('.ssumup').value = totalfood2;
     }
   }
 
@@ -166,5 +171,5 @@ document.querySelector('.next').addEventListener('click', ()=>{
   document.querySelector('.check').classList.toggle("clicked") 
   document.querySelector('.please').classList.toggle("clicked") 
   document.querySelector('.menus').classList.toggle("clicked")
-
+  document.querySelector('.totalbox2').classList.toggle("clicked")
 });
