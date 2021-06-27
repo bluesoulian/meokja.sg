@@ -34,10 +34,15 @@
 }
 
 .please {
+  display: none;
   margin-top: 5rem;
   margin-bottom: 3rem;
   font-weight: 1000;
   font-size: 1.2rem;
+}
+
+.please.clicked {
+  display: flex;
 }
 
 .form img {
@@ -52,10 +57,15 @@
 }
 
 .form .info {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 95%;
 }
+
+.form .info.clicked{
+  display: flex;
+}
+
 
 .form .info label {
   font-size: 0.8rem;
@@ -71,6 +81,7 @@
 }
 
 .submit {
+  display: none;
   width: 90%;
   margin: 0 auto;
   margin-top: 50px;
@@ -91,6 +102,10 @@
   cursor: pointer;
 }
 
+.submit.clicked {
+  display: inline;
+}
+
 .check {
   margin-top: 4rem;
   font-weight: 500;
@@ -103,6 +118,10 @@
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+}
+
+.menus.clicked {
+  display: none;
 }
 
 .menus .select {
@@ -175,13 +194,42 @@
   margin-bottom: 0.5rem;
 }
 
+.next {
+  position: relative;
+  width: 30%;
+  margin-top: 10%;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 5rem;
+  height: 4vh;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: ivory;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  cursor: pointer;
+}
+
+.next.clicked {
+  display: none;
+}
+
+
 .invoice {
   display: flex;
   flex-direction: column;
 }
 
 .sumup {
-  border: none;
+  border: flex;
   width: 10%;
 }
 
@@ -193,10 +241,15 @@
 }
 
 .check{
-  display: flex;
+  display: none;
   flex-direction: column;
   border: dotted 0.1px grey;
 }
+
+.check.clicked {
+  display: flex
+}
+
 
 .check input{
   margin-top: 0.1rem;

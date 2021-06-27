@@ -1,12 +1,12 @@
-
 const jajangprice = 10;
 const jampongprice = 15;
 const tansuYuk =23;
 const jajangset = jajangprice*2 + tansuYuk -5;
 const jjampongset = jampongprice*2 + tansuYuk -5;
 const jjamjjaset = jajangprice + jampongprice + tansuYuk -5;
+const InYishun = 5;
 
-  const getprice = () =>{
+  const getprice = ( ) =>{
 
     //짜장면
     const countitem = document.querySelector(".countitem").value;
@@ -116,18 +116,55 @@ const jjamjjaset = jajangprice + jampongprice + tansuYuk -5;
     
     const sumup = totalprice + totalprice2 + totalprice3 +
                 totalprice4 + totalprice5 + totalprice6;
-                
     
     document.querySelector('.sumup').value = sumup;
+    
+ 
 
     //인사이드 리미트
 
     if(document.querySelector('.sumup').value < 25) {
-      document.querySelector('.submit').disabled = true;
+      document.querySelector('.submit').disabled = true; 
+      document.getElementById('Delivery_options').disabled = true;     
+      document.querySelector('.next').disabled = true; 
    }else if(document.querySelector('.sumup').value >= 25) {
     document.querySelector('.submit').disabled = false;
+    document.getElementById('Delivery_options').disabled = false;
+    document.querySelector('.next').disabled = false;    
    }
 
 }
 
 
+function addDeliver() {
+
+    if (document.getElementById("Delivery_options").value === "InYishun") {
+      let totalfood = document.querySelector('.sumup').value
+      let totalfood2 = parseInt(totalfood, 10) + 5
+      document.querySelector('.sumup').value = totalfood2
+      document.getElementById('Delivery_options').disabled = true; 
+    }
+    else if (document.getElementById("Delivery_options").value === "OutYishun") {
+      let totalfood = document.querySelector('.sumup').value
+      let totalfood2 = parseInt(totalfood, 10) + 10
+      document.querySelector('.sumup').value = totalfood2
+      document.getElementById('Delivery_options').disabled = true; 
+    }
+    else if (document.getElementById("Delivery_options").value === "PickUp") {
+      let totalfood = document.querySelector('.sumup').value
+      let totalfood2 = parseInt(totalfood, 10)
+      document.querySelector('.sumup').value = totalfood2
+      document.getElementById('Delivery_options').disabled = true; 
+    }
+  }
+
+document.querySelector('.next').addEventListener('click', ()=>{
+
+  document.querySelector('.next').classList.toggle("clicked")
+  document.querySelector('.submit').classList.toggle("clicked") 
+  document.querySelector('.info').classList.toggle("clicked") 
+  document.querySelector('.check').classList.toggle("clicked") 
+  document.querySelector('.please').classList.toggle("clicked") 
+  document.querySelector('.menus').classList.toggle("clicked")
+
+});

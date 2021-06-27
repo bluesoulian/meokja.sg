@@ -67,41 +67,57 @@
             </div>
         </div>
 
+        <button class="next" disabled>next</button>
+
         <span class="please">Fill Up Your Order form Please</span>
         <div class="info">
-            <input type="hidden" name="_next" value="https://bluesoulian.github.io/meokja.sg/thnaks.html">
+            <input type="hidden" name="_next" value="https://bluesoulian.github.io/meokja.sg/thanks.html">
             <label>Name</label>
             <input type="text" name="customer_name" placeholder="write your name here" required>
             <label>Address</label>
-            <input type="text" name="customer_address" placeholder="write your address here" required>
+            <input type="text" name="customer_address" placeholder="write your address here" required class="address">
             <label>ContactNumber</label>
             <input type="text" name="customer_contactnumber" placeholder="write your contactnumber here" required>
             <label>EmailAddress</label>
             <input type="text" name="customer_email" placeholder="write your e-mail here" required>
-            <label>Delivery_options</label>
-            <input list="Delivery_options" name="Delivery_way" required onkeydown="return false">
-            <datalist id="Delivery_options">
-                <option value="In Yishun">
-                <option value="Out Yishun">
-                <option value="PickUp">
-            </datalist>
-            <label>DayofDelivery</label>
-            <input list="days" name="Delivery_date" required onkeydown="return false">
-            <datalist id="days">
-                <option value="june 22, 2021">
-                <option value="june 23, 2021">
-                <option value="june 25, 2021">
-                <option value="june 26, 2021">
-                <option value="june 27, 2021">
-            </datalist>
-            <label>DeliveryTime</label>
-            <input list="time" name="Delivery_date" required onkeydown="return false">
-            <datalist id="time">
-                <option value="Delivery 5:30pm - 7:00pm">
-                <option value="Delivery 7:00pm - 8:00pm">
-                <option value="PickUp 6:00pm - 8:00pm">
-            </datalist>
+            
+            <label for="Delivery_options">Delivery_options</label>
+            <select id="Delivery_options" name="Delivery_way" required onchange="addDeliver()" disabled>
+                <option value="none" selected disabled hidden>
+                    Select an Option
+                </option>
+                <option value="InYishun"> Inside Yishun </option>
+                <option value="OutYishun"> Outside Yishun </option>
+                <option value="PickUp"> PickUp </option>
+            </select>
+                
+            
+            <label for="days">DayofDelivery</label>
+            <select id="days" name="Delivery_date" required>
+                <option value="none" selected disabled hidden>
+                    Select an Option
+                </option>
+                <option value="june 22 2021"> june 22, 2021 </option>
+                <option value="june 23 2021"> june 23, 2021 </option>
+                <option value="june 25 2021"> june 25, 2021 </option>
+                <option value="june 26 2021"> june 26, 2021 </option>
+                <option value="june 27 2021"> june 27, 2021 </option>
+            </select>
+            
+
+
+            <label for="time">DeliveryTime</label>
+            <select id="time" name="Delivery_time" required>
+                <option value="none" selected disabled hidden>
+                    Select an Option
+                </option>
+                <option value="Delivery 5:30pm - 7:00pm"> Delivery 5:30pm - 7:00pm </option>
+                <option value="Delivery 7:00pm - 8:00pm"> Delivery 7:00pm - 8:00pm </option>
+                <option value="PickUp 6:00pm - 8:00pm"> PickUp 6:00pm - 8:00pm </option>
+            </select>
+            
         </div>
+
         <div class="check">
             <label>Your Order Details</label>
             <input type="text" name="customer_jjajang" class="customer_order" onclick="getprice()" onkeydown="return false">
@@ -116,6 +132,7 @@
             </div>
         </div>
             <button class="submit" disabled onclick="limit()">submit</button>
+
    </form>
 
 
