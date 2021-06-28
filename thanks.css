@@ -1,0 +1,90 @@
+:root {  /*color preset*/    
+    --red-color: #ff0f0f;
+    --white-color: #fcf7f7;
+    --green-color: #36f221;
+    --black-color: #181710;
+    --blue-color: #0004f5;
+    --a-color: #e8e005;
+
+    --padding: 8px 12px;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--black-color)
+}
+
+
+.Thanks {
+    display: flex;
+    flex-direction: column;
+}
+
+.Thanks .Thankyou__Message {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+    margin: 4rem;
+    margin-bottom: 6rem;
+    color: var(--white-color);
+}
+
+.Thanks .long__Message {
+    display: flex;
+    align-items: center;
+    color:grey;
+    background: var(--white-color);
+    height: 20rem;
+    
+}
+
+
+.Thanks p {
+    text-align: center;
+
+}
+
+.icons{
+    font-size: 5rem;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;    
+}
+
+
+.icons .instagram{
+  color:var(--red-color); 
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+
+}
+
+.icons .whatsapp{
+    color: var(--green-color);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  
+}
+
+.icons .facebook{
+    color: var(--blue-color);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    
+}
+
+.icons .title{
+    font-size: 0.8rem;
+    color: var(--white-color);
+    margin: 0 auto;
+    color: grey;
+
+}

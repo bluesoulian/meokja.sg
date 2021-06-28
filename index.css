@@ -21,6 +21,18 @@ button {
   font-family: Fredericka the Great;
 }
 
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
 .container {
   min-height: 100vh;
   width: 100%;

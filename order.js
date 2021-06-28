@@ -134,33 +134,39 @@ const InYishun = 5;
     if(document.querySelector('.countitem').value > 5) {
       document.querySelector('.countitem').value = ""
       document.querySelector('.priceshowing').innerHTML = ""
+      document.querySelector('.sumup').value = ""
       document.querySelector('.sumup2').value = ""
     }
     if(document.querySelector('.countitem2').value > 5) {
       document.querySelector('.countitem2').value = ""
       document.querySelector('.priceshowing2').innerHTML = ""
+      document.querySelector('.sumup').value = ""
       document.querySelector('.sumup2').value = ""
     }
     if(document.querySelector('.countitem3').value > 5) {
       document.querySelector('.countitem3').value = ""
       document.querySelector('.priceshowing3').innerHTML = ""
+      document.querySelector('.sumup').value = ""
       document.querySelector('.sumup2').value = ""
     }
         
     if(document.querySelector('.countitem4').value > 5) {
       document.querySelector('.countitem4').value = ""
       document.querySelector('.priceshowing4').innerHTML = ""
+      document.querySelector('.sumup').value = ""
       document.querySelector('.sumup2').value = ""
     }
         
     if(document.querySelector('.countitem5').value > 5) {
       document.querySelector('.countitem5').value = ""
       document.querySelector('.priceshowing5').innerHTML = ""
+      document.querySelector('.sumup').value = ""
       document.querySelector('.sumup2').value = ""
     }
     if(document.querySelector('.countitem6').value > 5) {
       document.querySelector('.countitem6').value = ""
       document.querySelector('.priceshowing6').innerHTML = ""
+      document.querySelector('.sumup').value = ""
       document.querySelector('.sumup2').value = ""
     }
  
