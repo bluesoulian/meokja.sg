@@ -238,7 +238,7 @@ ul {
 }
 
 .links li a:hover {
-  font-size:0;   
+  font-size: 0;
   transition: 5ms;
 }
 
@@ -349,15 +349,14 @@ ul {
   }
 
   .container.active {
-   
-    background-image: url('/images/homeimg4.jpg');
+    transition: 0.3s;
+    background-image: url('./images/homeimg4.jpg');
     background-position-y: 70px;
     background-repeat: no-repeat;
   }
 
   .main-container {
     display: none;
-    
   }
 
   .links {
@@ -366,25 +365,21 @@ ul {
     align-items: center;
     width: 100vw;
     text-align: center;
-    
   }
 
   .container.active .links {
     display: flex;
-    background-color:rgba(43, 51, 59, 0.3);
+    background-color: rgba(43, 51, 59, 0.3);
   }
 
   .links li a {
     font-size: 1.5rem;
-
-   
   }
-
 
   .links li a:hover {
     background-color: var(--red-color);
-    font-size:0;   
-    transition: 5ms; 
+    font-size: 0;
+    transition: 5ms;
     width: 80vw;
     border-radius: 10px;
   }
@@ -393,6 +388,4 @@ ul {
     content: attr(data-hover);
     font-size: 2rem;
   }
-
-
 }
