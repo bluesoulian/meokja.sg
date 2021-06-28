@@ -128,23 +128,23 @@
 
         <div class="check">
             <label>Your Order Details</label>
-            <input onkeypress="return false" type="text" name="customer_jjajang" class="customer_order" onclick="getprice()">
-            <input onkeypress="return false" type="text" name="customer_jjamppong" class="customer_order2" onclick="getprice()">
-            <input onkeypress="return false" type="text" name="customer_tangsuyuk" class="customer_order3" onclick="getprice()">
-            <input onkeypress="return false" type="text" name="customer_jjajangset" class="customer_order4" onclick="getprice()">
-            <input onkeypress="return false" type="text" name="customer_jjampongset" class="customer_order5" onclick="getprice()">
-            <input onkeypress="return false"  type="text" name="customer_jjamjjagset" class="customer_order6" onclick="getprice()">
+            <input readonly type="text" name="customer_jjajang" class="customer_order" onclick="getprice()">
+            <input readonly type="text" name="customer_jjamppong" class="customer_order2" onclick="getprice()">
+            <input readonly type="text" name="customer_tangsuyuk" class="customer_order3" onclick="getprice()">
+            <input readonly type="text" name="customer_jjajangset" class="customer_order4" onclick="getprice()">
+            <input readonly type="text" name="customer_jjampongset" class="customer_order5" onclick="getprice()">
+            <input readonly  type="text" name="customer_jjamjjagset" class="customer_order6" onclick="getprice()">
             <div class="deliveryBox">
                 <span>Delivery Total:</span>
-                <input onkeypress="return false" type="text" name="delivery_price" required class="dsumup">
+                <input readonly type="text" name="delivery_price" required class="dsumup">
             </div>
             <div class="totalbox">
                 <span>Food Total:</span>
-                <input onkeypress="return false" type="text" name="customer_sumup" required class="sumup">
+                <input readonly type="text" name="customer_sumup" required class="sumup">
             </div>
             <div class="superTotal">
                 <span>AllTogether:</span>
-                <input onkeypress="return false" type="text" name="SumAllTogether" required class="ssumup">
+                <input readonly type="text" name="SumAllTogether" required class="ssumup">
             </div>
         </div>
             <button class="submit" disabled onclick="limit()">submit</button>
