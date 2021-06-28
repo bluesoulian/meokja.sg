@@ -217,5 +217,6 @@ document.querySelector('.next').addEventListener('click', ()=>{
   document.querySelector('.please').classList.toggle("clicked") 
   document.querySelector('.menus').classList.toggle("clicked")
   document.querySelector('.totalbox2').classList.toggle("clicked")
+  document.querySelector('.ok').classList.toggle("clicked")
 });
 

@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
@@ -94,7 +95,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 5rem;
-  height: 4vh;
+  height: 2rem;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -202,15 +203,45 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 0.5rem;
 }
 
+.ok{
+  position: relative;
+  margin-top: 10%;
+  width: 10rem;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 5rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: whitesmoke;
+  background: grey;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  
+}
+
+
+.ok.clicked {
+  display: none;
+}
+
 .next {
   position: relative;
   width: 30%;
   margin-top: 10%;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 5rem;
-  height: 4vh;
+  height: 2rem;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -269,13 +300,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 .totalbox2 {
+  display: flex;
   position: relative;
   width: 100%;
+  margin-top: 1rem;
   font-weight: 1000;
   text-align: center;
-  margin-top: 10%;
 }
 
+.totalbox2 input{
+  width: 2.5rem;
+  text-align: center;
+}
 .totalbox2.clicked {
   display: none;
 }
