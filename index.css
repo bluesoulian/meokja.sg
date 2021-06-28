@@ -349,8 +349,6 @@ ul {
   }
 
   .container.active {
-    
-    background-image: none;
     transition: 0.3s;
     background-image: url('/images/homeimg4.jpg');
     background-position-y: 70px;
