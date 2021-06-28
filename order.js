@@ -129,7 +129,7 @@ const InYishun = 5;
 
     document.querySelector('.sumup2').value = sumup2;
 
-    //수량 5개 이상 입력시
+    //수량 5개 이상 입력시 (for iphone)
 
     if(document.querySelector('.countitem').value > 5) {
       document.querySelector('.countitem').value = ""
