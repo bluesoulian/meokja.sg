@@ -86,9 +86,6 @@ body::-webkit-scrollbar-thumb {
  }
 
 
-
-
-
 .container{
   
   display: flex;
@@ -113,9 +110,15 @@ body::-webkit-scrollbar-thumb {
   
 }
 
-.container .card:hover{
+/* .container .card:hover{
+  height: 420px;
+} */
+
+.container .card.clicked {
   height: 420px;
 }
+
+
 
 .container .card .imgBx{
   position: relative;
@@ -146,7 +149,14 @@ body::-webkit-scrollbar-thumb {
   transition: 0.3s ease-in-out;
 }
 
-.container .card:hover .content{
+/* .container .card:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -85px;
+  transition-delay: 0.3s;
+} */
+
+.container .card.clicked .content{
   visibility: visible;
   opacity: 1;
   margin-top: -85px;
