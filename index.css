@@ -349,7 +349,7 @@ ul {
   }
 
   .container.active {
-    transition: 0.3s;
+   
     background-image: url('/images/homeimg4.jpg');
     background-position-y: 70px;
     background-repeat: no-repeat;
