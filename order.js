@@ -14,15 +14,15 @@ const InYishun = 5;
     document.querySelector(".priceshowing").innerHTML = "$"+totalprice;
       
       if(document.querySelector('.priceshowing').innerHTML === '$10'){
-        document.querySelector('.customer_order').value = "Jajang1"}
+        document.querySelector('.customer_order').value = "JjaJang 1"}
       else if(document.querySelector('.priceshowing').innerHTML === '$20')
-      {document.querySelector('.customer_order').value = "Jajang2"}
+      {document.querySelector('.customer_order').value = "JjaJang 2"}
       else if(document.querySelector('.priceshowing').innerHTML === '$30')
-      {document.querySelector('.customer_order').value = "Jajang3"}
+      {document.querySelector('.customer_order').value = "JjaJang 3"}
       else if(document.querySelector('.priceshowing').innerHTML === '$40')
-      {document.querySelector('.customer_order').value = "Jajang4"}
+      {document.querySelector('.customer_order').value = "JjaJang 4"}
       else if(document.querySelector('.priceshowing').innerHTML === '$50')
-      {document.querySelector('.customer_order').value = "Jajang5"}
+      {document.querySelector('.customer_order').value = "JjaJang 5"}
       else {document.querySelector('.customer_order').value = ""}
 
 
@@ -33,15 +33,15 @@ const InYishun = 5;
 
 
       if(document.querySelector('.priceshowing2').innerHTML === '$12'){
-        document.querySelector('.customer_order2').value = "Jjamppong1"}
+        document.querySelector('.customer_order2').value = "JjamPpong 1"}
       else if(document.querySelector('.priceshowing2').innerHTML === '$24')
-      {document.querySelector('.customer_order2').value = "jjamppong2"}
+      {document.querySelector('.customer_order2').value = "JjamPpong 2"}
       else if(document.querySelector('.priceshowing2').innerHTML === '$36')
-      {document.querySelector('.customer_order2').value = "jjamppong3"}
+      {document.querySelector('.customer_order2').value = "JjamPpong 3"}
       else if(document.querySelector('.priceshowing2').innerHTML === '$48')
-      {document.querySelector('.customer_order2').value = "Jjampong4"}
+      {document.querySelector('.customer_order2').value = "JjamPpong 4"}
       else if(document.querySelector('.priceshowing2').innerHTML === '$60')
-      {document.querySelector('.customer_order2').value = "Jjampong5"}
+      {document.querySelector('.customer_order2').value = "JjamPpong 5"}
       else {document.querySelector('.customer_order2').value = ""}
 
     //탕수육
@@ -50,15 +50,15 @@ const InYishun = 5;
     document.querySelector(".priceshowing3").innerHTML = "$"+totalprice3;
 
     if(document.querySelector('.priceshowing3').innerHTML === '$22'){
-      document.querySelector('.customer_order3').value = "tangsuyuk1"}
+      document.querySelector('.customer_order3').value = "TangSuYuk 1"}
     else if(document.querySelector('.priceshowing3').innerHTML === '$44')
-    {document.querySelector('.customer_order3').value = "tansuyuk2"}
+    {document.querySelector('.customer_order3').value = "TangSuYuk 2"}
     else if(document.querySelector('.priceshowing3').innerHTML === '$66')
-    {document.querySelector('.customer_order3').value = "tansuyuk3"}
+    {document.querySelector('.customer_order3').value = "TangSuYuk 3"}
     else if(document.querySelector('.priceshowing3').innerHTML === '$88')
-    {document.querySelector('.customer_order3').value = "tansuyuk4"}
+    {document.querySelector('.customer_order3').value = "TangSuYuk 4"}
     else if(document.querySelector('.priceshowing3').innerHTML === '$110')
-    {document.querySelector('.customer_order3').value = "tansuyuk5"}
+    {document.querySelector('.customer_order3').value = "TangSuYuk 5"}
     else {document.querySelector('.customer_order3').value = ""}
 
     //짜장셋
@@ -67,15 +67,15 @@ const InYishun = 5;
     document.querySelector(".priceshowing4").innerHTML = "$"+totalprice4;
 
     if(document.querySelector('.priceshowing4').innerHTML === '$37'){
-      document.querySelector('.customer_order4').value = "jjajangset1"}
+      document.querySelector('.customer_order4').value = "JjaJang Set 1"}
     else if(document.querySelector('.priceshowing4').innerHTML === '$74')
-    {document.querySelector('.customer_order4').value = "jjajangset2"}
+    {document.querySelector('.customer_order4').value = "JjaJang Set 2"}
     else if(document.querySelector('.priceshowing4').innerHTML === '$111')
-    {document.querySelector('.customer_order4').value = "jjajangset3"}
+    {document.querySelector('.customer_order4').value = "JjaJang Set 3"}
     else if(document.querySelector('.priceshowing4').innerHTML === '$148')
-    {document.querySelector('.customer_order4').value = "jjajangset4"}
+    {document.querySelector('.customer_order4').value = "JjaJang Set 4"}
     else if(document.querySelector('.priceshowing4').innerHTML === '$185')
-    {document.querySelector('.customer_order4').value = "jjajangset5"}
+    {document.querySelector('.customer_order4').value = "JjaJang Set 5"}
     else {document.querySelector('.customer_order4').value = ""}
 
 
@@ -86,15 +86,15 @@ const InYishun = 5;
     document.querySelector(".priceshowing5").innerHTML = "$"+totalprice5;
 
     if(document.querySelector('.priceshowing5').innerHTML === '$41'){
-      document.querySelector('.customer_order5').value = "jjamppongset1"}
+      document.querySelector('.customer_order5').value = "JjamPpong Set 1"}
     else if(document.querySelector('.priceshowing5').innerHTML === '$82')
-    {document.querySelector('.customer_order5').value = "jjamppongset2"}
+    {document.querySelector('.customer_order5').value = "JjamPpong Set 2"}
     else if(document.querySelector('.priceshowing5').innerHTML === '$123')
-    {document.querySelector('.customer_order5').value = "jjamppongset3"}
+    {document.querySelector('.customer_order5').value = "JjamPpong Set 3"}
     else if(document.querySelector('.priceshowing5').innerHTML === '$164')
-    {document.querySelector('.customer_order5').value = "jjamppongset4"}
+    {document.querySelector('.customer_order5').value = "JjamPpong Set 4"}
     else if(document.querySelector('.priceshowing5').innerHTML === '$205')
-    {document.querySelector('.customer_order5').value = "jjamppongset5"}
+    {document.querySelector('.customer_order5').value = "JjamPpong Set 5"}
     else {document.querySelector('.customer_order5').value = ""}
 
     //짬짜셋
@@ -103,15 +103,15 @@ const InYishun = 5;
     document.querySelector(".priceshowing6").innerHTML = "$"+totalprice6;
 
     if(document.querySelector('.priceshowing6').innerHTML === '$39'){
-      document.querySelector('.customer_order6').value = "jjamjjaset1"}
+      document.querySelector('.customer_order6').value = "JjamJja Set 1"}
     else if(document.querySelector('.priceshowing6').innerHTML === '$78')
-    {document.querySelector('.customer_order6').value = "jjamjjaset2"}
+    {document.querySelector('.customer_order6').value = "JjamJja Set 2"}
     else if(document.querySelector('.priceshowing6').innerHTML === '$117')
-    {document.querySelector('.customer_order6').value = "jjamjjaset3"}
+    {document.querySelector('.customer_order6').value = "JjamJja Set 3"}
     else if(document.querySelector('.priceshowing6').innerHTML === '$156')
-    {document.querySelector('.customer_order6').value = "jjamjjaset4"}
+    {document.querySelector('.customer_order6').value = "JjamJja Set 4"}
     else if(document.querySelector('.priceshowing6').innerHTML === '$195')
-    {document.querySelector('.customer_order6').value = "jjamjjaset5"}
+    {document.querySelector('.customer_order6').value = "JjamJja Set 5"}
     else {document.querySelector('.customer_order6').value = ""}
 
 
@@ -188,23 +188,23 @@ const InYishun = 5;
 
 function addDeliver() {
 
-    if (document.getElementById("Delivery_options").value === "InYishun") {
+    if (document.getElementById("Delivery_options").value === "Within Yishun") {
       let totalfood = document.querySelector('.sumup').value
       let totalfood2 = parseInt(totalfood, 10)
       document.querySelector('.dsumup').value = 5;
-      document.querySelector('.ssumup').value = totalfood2 + 5;
+      document.querySelector('.ssumup').value = `$${totalfood2 + 5}`;
     }
-    else if (document.getElementById("Delivery_options").value === "OutYishun") {
+    else if (document.getElementById("Delivery_options").value === "Outside Yishun") {
       let totalfood = document.querySelector('.sumup').value
       let totalfood2 = parseInt(totalfood, 10)
       document.querySelector('.dsumup').value = 10; 
-      document.querySelector('.ssumup').value = totalfood2 + 10;
+      document.querySelector('.ssumup').value = `$${totalfood2 + 10}`;
     }
-    else if (document.getElementById("Delivery_options").value === "PickUp") {
+    else if (document.getElementById("Delivery_options").value === "Pick Up") {
       let totalfood = document.querySelector('.sumup').value
       let totalfood2 = parseInt(totalfood, 10)
       document.querySelector('.dsumup').value = 0; 
-      document.querySelector('.ssumup').value = totalfood2;
+      document.querySelector('.ssumup').value = `$${totalfood2}`;
     }
   }
 

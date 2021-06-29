@@ -67,6 +67,7 @@
                     <span class="priceshowing6"></span>
                 </div>
             </div>
+
         </div>
         
             <div class="totalbox2">
@@ -125,7 +126,6 @@
                 <option value="Delivery 7:00pm - 8:00pm"> Delivery 7:00pm - 8:00pm </option>
                 <option value="PickUp 6:00pm - 8:00pm"> PickUp 6:00pm - 8:00pm </option>
             </select>
-            
         </div>
 
         <div class="check">
@@ -136,16 +136,17 @@
             <input readonly type="text" name="customer_jjajangset" class="customer_order4" onclick="getprice()">
             <input readonly type="text" name="customer_jjampongset" class="customer_order5" onclick="getprice()">
             <input readonly type="text" name="customer_jjamjjagset" class="customer_order6" onclick="getprice()">
-            <div class="deliveryBox">
-                <span>Delivery Total:</span>
-                <input readonly type="text" name="delivery_price" required class="dsumup">
-            </div>
+            
             <div class="totalbox">
-                <span>Food Total:</span>
+                <span>Sub Total ($):</span>
                 <input readonly type="text" name="food_price" required class="sumup">
             </div>
+            <div class="deliveryBox">
+                <span>Delivery Fee ($):</span>
+                <input readonly type="text" name="delivery_price" required class="dsumup">
+            </div>
             <div class="superTotal">
-                <span>AllTogether:</span>
+                <span>Total ($):</span>
                 <input readonly type="text" name="sumup" required class="ssumup">
             </div>
         </div>

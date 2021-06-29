@@ -18,7 +18,8 @@
 
 body,
 button {
-  font-family: 'Poppins', sans-serif;
+  font-family: Fredericka the Great;
+  
 }
 
 body::-webkit-scrollbar {
@@ -41,12 +42,6 @@ body::-webkit-scrollbar-thumb {
   display: block;
 }
 
-.more.clicked{
-  display: none;
-}
-
-
-
 
 .container {
   min-height: 100vh;
@@ -64,6 +59,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   z-index: 10;
   height: 3rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .menu {
@@ -80,7 +76,7 @@ body::-webkit-scrollbar-thumb {
 .logo {
   font-size: 1.1rem;
   font-weight: 600;
-  text-transform: uppercase;
+  
   letter-spacing: 2px;
   line-height: 4rem;
   display: flex;
@@ -97,6 +93,12 @@ body::-webkit-scrollbar-thumb {
   width: 4rem;
   top: 0.2rem;
 }
+
+.navbar .icons{
+  font-size: 23px;
+  text-align: center;
+}
+
 
 .hamburger-menu {
   height: 4rem;
@@ -239,7 +241,7 @@ ul {
   display: inline-block;
   font-size: 1.2rem;
   font-weight: 300;
-  text-transform: uppercase;
+  
   letter-spacing: 1px;
   transition: 0.3s;
   opacity: 0;
@@ -404,3 +406,4 @@ ul {
     font-size: 2rem;
   }
 }
+

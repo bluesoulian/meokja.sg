@@ -12,6 +12,7 @@
 *{
     margin:0;
     padding: 0;
+    
 }
 html, body{
     background: var(--black-color);
@@ -58,7 +59,8 @@ body::-webkit-scrollbar {
   .navbar .logoandtitle {
     display: flex;
     align-items: center;
-    color: var(--white-color)
+    color: var(--white-color);
+    font-family: 'Poppins', sans-serif;
   }
   
   .navbar .logoandtitle .mlogo{

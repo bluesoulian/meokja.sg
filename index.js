@@ -11,7 +11,6 @@ hamburger_menu.addEventListener("click", () =>{
 readmore.addEventListener("click", () =>{
    
         description.classList.toggle("clicked")
-        readmore.classList.toggle("clicked")
+
      
 })
-

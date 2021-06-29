@@ -19,6 +19,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+  
 }
 
 a {
@@ -52,7 +53,9 @@ body::-webkit-scrollbar-thumb {
 .navbar .logoandtitle {
   display: flex;
   align-items: center;
-  color: var(--white-color)
+  color: var(--white-color);
+  font-family: 'Poppins', sans-serif;
+  
 }
 
 .navbar .logoandtitle .mlogo{
@@ -240,7 +243,7 @@ body::-webkit-scrollbar-thumb {
     max-width: 1500px;
     margin: 0 auto;
     height: 100vh;
-   
+    margin-top: 3rem;
   }
 
   .menubar{
