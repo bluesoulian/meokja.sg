@@ -18,7 +18,7 @@
 
 body,
 button {
-  font-family: Fredericka the Great;
+  font-family: 'Poppins', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -32,6 +32,21 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
+
+.description{
+  display: none;
+}
+
+.description.clicked{
+  display: block;
+}
+
+.more.clicked{
+  display: none;
+}
+
+
+
 
 .container {
   min-height: 100vh;

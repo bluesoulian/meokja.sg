@@ -1,6 +1,6 @@
 const hamburger_menu = document.querySelector(".hamburger-menu");
 const container = document.querySelector(".container");
-const readmore = document.querySelector(".btn");
+const readmore = document.querySelector(".more");
 const description = document.querySelector(".description");
 
 hamburger_menu.addEventListener("click", () =>{
@@ -9,11 +9,9 @@ hamburger_menu.addEventListener("click", () =>{
 })
 
 readmore.addEventListener("click", () =>{
-    description.innerHTML = `hello sdahfqhopwfjopqjfojqweijof
-    sdkfjlqwefjkldjslkfjklsdjklfsjklfsdkl
-    qhkfwelfhlkwhejfklklwfjkldjklfjksldf
-    dfjkqwhfehwlqfeiljfqowefjweofjwejfoi
-    wheuifhowiejfoiwjeofiwoiefohewofihowi
-    qwefqefqwefqwefwfwefwefwefwefweffwefw
-    qhwoefhowehfoiwejhiofwjiofejiowjfioio`;
+   
+        description.classList.toggle("clicked")
+        readmore.classList.toggle("clicked")
+     
 })
+
