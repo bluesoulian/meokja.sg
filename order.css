@@ -163,22 +163,6 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
 }
 
-.menus .outsideYishun {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 33.333333%;
-}
-
-.menus .insideYishun {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 33.333333%;
-}
-
-.menus .pickup {
-  display: flex;
-  flex-direction: column;
-}
 
 .menus .jajangmeyon {
   display: flex;
@@ -209,9 +193,45 @@ body::-webkit-scrollbar-thumb {
   flex: 0 0 33.333333%;
 }
 
+
 .menus .JjamJjaSet {
   display: flex;
   flex-direction: column;
+}
+
+.menus .Doenjangjjigae {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 33.333333%;
+}
+
+.menus .Budaejjigae{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 33.333333%;
+}
+
+.menus .Dosirak{
+  display: flex;
+  flex-direction: column;
+}
+
+.menus .DoenjangjjigaeSet{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 33.333333%;
+}
+
+.menus .BudaejjigaeSet{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 33.333333%;
+}
+
+.menus .Whiterice{
+  display: flex;
+  flex-direction: column;
+ 
 }
 
 .menus img {

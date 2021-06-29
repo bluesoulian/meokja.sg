@@ -4,7 +4,13 @@ const tansuYuk =22;
 const jajangset = jajangprice*2 + tansuYuk -5;
 const jjampongset = jampongprice*2 + tansuYuk -5;
 const jjamjjaset = jajangprice + jampongprice + tansuYuk -5;
-const InYishun = 5;
+const doenjangjjigae = 9;
+const budaejjigae = 12;
+const dosirak = 8;
+const doenjangjjigaeset = doenjangjjigae + dosirak - 2;
+const budaejjigaeset = budaejjigae + dosirak -2;
+const whiterice = 1;
+
 
   const getprice = ( ) =>{
 
@@ -114,18 +120,122 @@ const InYishun = 5;
     {document.querySelector('.customer_order6').value = "JjamJja Set 5"}
     else {document.querySelector('.customer_order6').value = ""}
 
+    //된장찌개
+    const countitem7 = document.querySelector(".countitem7").value;
+    const totalprice7 = doenjangjjigae*countitem7;
+    document.querySelector(".priceshowing7").innerHTML = "$"+totalprice7;
 
-    
+    if(document.querySelector('.priceshowing7').innerHTML === '$9'){
+      document.querySelector('.customer_order7').value = "DoenJangJjiGae 1"}
+    else if(document.querySelector('.priceshowing7').innerHTML === '$18')
+    {document.querySelector('.customer_order7').value = "DoenJangJjiGae 2"}
+    else if(document.querySelector('.priceshowing7').innerHTML === '$27')
+    {document.querySelector('.customer_order7').value = "DoenJangJjiGae 3"}
+    else if(document.querySelector('.priceshowing7').innerHTML === '$36')
+    {document.querySelector('.customer_order7').value = "DoenJangJjiGae 4"}
+    else if(document.querySelector('.priceshowing7').innerHTML === '$45')
+    {document.querySelector('.customer_order7').value = "DoenJangJjiGae 5"}
+    else {document.querySelector('.customer_order7').value = ""}
+
+    //부대찌개
+    const countitem8 = document.querySelector(".countitem8").value;
+    const totalprice8 = budaejjigae*countitem8;
+    document.querySelector(".priceshowing8").innerHTML = "$"+totalprice8;
+
+    if(document.querySelector('.priceshowing8').innerHTML === '$12'){
+      document.querySelector('.customer_order8').value = "BudaeJjiGae 1"}
+    else if(document.querySelector('.priceshowing8').innerHTML === '$24')
+    {document.querySelector('.customer_order8').value = "BudaeJjiGae 2"}
+    else if(document.querySelector('.priceshowing8').innerHTML === '$36')
+    {document.querySelector('.customer_order8').value = "BudaeJjiGae 3"}
+    else if(document.querySelector('.priceshowing8').innerHTML === '$48')
+    {document.querySelector('.customer_order8').value = "BudaeJjiGae 4"}
+    else if(document.querySelector('.priceshowing8').innerHTML === '$60')
+    {document.querySelector('.customer_order8').value = "BudaeJjiGae 5"}
+    else {document.querySelector('.customer_order8').value = ""}
+
+    //도시락
+    const countitem9 = document.querySelector(".countitem9").value;
+    const totalprice9 = dosirak*countitem9;
+    document.querySelector(".priceshowing9").innerHTML = "$"+totalprice9;
+
+    if(document.querySelector('.priceshowing9').innerHTML === '$8'){
+      document.querySelector('.customer_order9').value = "Dosirak 1"}
+    else if(document.querySelector('.priceshowing9').innerHTML === '$16')
+    {document.querySelector('.customer_order9').value = "Dosirak 2"}
+    else if(document.querySelector('.priceshowing9').innerHTML === '$24')
+    {document.querySelector('.customer_order9').value = "Dosirak 3"}
+    else if(document.querySelector('.priceshowing9').innerHTML === '$32')
+    {document.querySelector('.customer_order9').value = "Dosirak 4"}
+    else if(document.querySelector('.priceshowing9').innerHTML === '$40')
+    {document.querySelector('.customer_order9').value = "Dosirak 5"}
+    else {document.querySelector('.customer_order9').value = ""}
+
+    //된장찌개 세트
+    const countitem10 = document.querySelector(".countitem10").value;
+    const totalprice10 = doenjangjjigaeset*countitem10;
+    document.querySelector(".priceshowing10").innerHTML = "$"+totalprice10;
+
+    if(document.querySelector('.priceshowing10').innerHTML === '$15'){
+      document.querySelector('.customer_order10').value = "DoenJangJjiGae(dosirak) Set 1"}
+    else if(document.querySelector('.priceshowing10').innerHTML === '$30')
+    {document.querySelector('.customer_order10').value = "DoenJangJjiGae(dosirak) Set 2"}
+    else if(document.querySelector('.priceshowing10').innerHTML === '$45')
+    {document.querySelector('.customer_order10').value = "DoenJangJjiGae(dosirak) Set 3"}
+    else if(document.querySelector('.priceshowing10').innerHTML === '$60')
+    {document.querySelector('.customer_order10').value = "DoenJangJjiGae(dosirak) Set 4"}
+    else if(document.querySelector('.priceshowing10').innerHTML === '$75')
+    {document.querySelector('.customer_order10').value = "DoenJangJjiGae(dosirak) Set 5"}
+    else {document.querySelector('.customer_order10').value = ""}
+
+
+    //부대찌개 세트
+    const countitem11 = document.querySelector(".countitem11").value;
+    const totalprice11 = budaejjigaeset*countitem11;
+    document.querySelector(".priceshowing11").innerHTML = "$"+totalprice11;
+
+    if(document.querySelector('.priceshowing11').innerHTML === '$18'){
+      document.querySelector('.customer_order11').value = "BudaeJjiGae Set 1"}
+    else if(document.querySelector('.priceshowing11').innerHTML === '$36')
+    {document.querySelector('.customer_order11').value = "BudaeJjiGae Set 2"}
+    else if(document.querySelector('.priceshowing11').innerHTML === '$54')
+    {document.querySelector('.customer_order11').value = "BudaeJjiGae Set 3"}
+    else if(document.querySelector('.priceshowing11').innerHTML === '$72')
+    {document.querySelector('.customer_order11').value = "BudaeJjiGae Set 4"}
+    else if(document.querySelector('.priceshowing11').innerHTML === '$90')
+    {document.querySelector('.customer_order11').value = "BudaeJjiGae Set 5"}
+    else {document.querySelector('.customer_order11').value = ""}
+
+    //공깃밥
+    const countitem12 = document.querySelector(".countitem12").value;
+    const totalprice12 = whiterice*countitem12;
+    document.querySelector(".priceshowing12").innerHTML = "$"+totalprice12;
+
+    if(document.querySelector('.priceshowing12').innerHTML === '$1'){
+      document.querySelector('.customer_order12').value = "WhiteRice 1"}
+    else if(document.querySelector('.priceshowing12').innerHTML === '$2')
+    {document.querySelector('.customer_order12').value = "WhiteRice 2"}
+    else if(document.querySelector('.priceshowing12').innerHTML === '$3')
+    {document.querySelector('.customer_order12').value = "WhiteRice 3"}
+    else if(document.querySelector('.priceshowing12').innerHTML === '$4')
+    {document.querySelector('.customer_order12').value = "WhiteRice 4"}
+    else if(document.querySelector('.priceshowing12').innerHTML === '$5')
+    {document.querySelector('.customer_order12').value = "WhiteRice 5"}
+    else {document.querySelector('.customer_order12').value = ""}
 
     //합친가격 및 디테일
     
     const sumup = totalprice + totalprice2 + totalprice3 +
-                totalprice4 + totalprice5 + totalprice6;
+    totalprice4 + totalprice5 + totalprice6 + totalprice7 +
+    totalprice8 + totalprice9 + totalprice10 + totalprice11 +
+    totalprice12;
     
     document.querySelector('.sumup').value = sumup;
 
     const sumup2 = totalprice + totalprice2 + totalprice3 +
-    totalprice4 + totalprice5 + totalprice6;
+    totalprice4 + totalprice5 + totalprice6 + totalprice7 +
+    totalprice8 + totalprice9 + totalprice10 + totalprice11 +
+    totalprice12;
 
     document.querySelector('.sumup2').value = sumup2;
 
@@ -166,6 +276,42 @@ const InYishun = 5;
     if(document.querySelector('.countitem6').value > 5) {
       document.querySelector('.countitem6').value = ""
       document.querySelector('.priceshowing6').innerHTML = ""
+      document.querySelector('.sumup').value = ""
+      document.querySelector('.sumup2').value = ""
+    }
+    if(document.querySelector('.countitem7').value > 5) {
+      document.querySelector('.countitem7').value = ""
+      document.querySelector('.priceshowing7').innerHTML = ""
+      document.querySelector('.sumup').value = ""
+      document.querySelector('.sumup2').value = ""
+    }
+    if(document.querySelector('.countitem8').value > 5) {
+      document.querySelector('.countitem8').value = ""
+      document.querySelector('.priceshowing8').innerHTML = ""
+      document.querySelector('.sumup').value = ""
+      document.querySelector('.sumup2').value = ""
+    }
+    if(document.querySelector('.countitem9').value > 5) {
+      document.querySelector('.countitem9').value = ""
+      document.querySelector('.priceshowing9').innerHTML = ""
+      document.querySelector('.sumup').value = ""
+      document.querySelector('.sumup2').value = ""
+    }
+    if(document.querySelector('.countitem10').value > 5) {
+      document.querySelector('.countitem10').value = ""
+      document.querySelector('.priceshowing10').innerHTML = ""
+      document.querySelector('.sumup').value = ""
+      document.querySelector('.sumup2').value = ""
+    }
+    if(document.querySelector('.countitem11').value > 5) {
+      document.querySelector('.countitem11').value = ""
+      document.querySelector('.priceshowing11').innerHTML = ""
+      document.querySelector('.sumup').value = ""
+      document.querySelector('.sumup2').value = ""
+    }
+    if(document.querySelector('.countitem12').value > 5) {
+      document.querySelector('.countitem12').value = ""
+      document.querySelector('.priceshowing12').innerHTML = ""
       document.querySelector('.sumup').value = ""
       document.querySelector('.sumup2').value = ""
     }
