@@ -1,25 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-  :root {  /*color preset*/    
-    --red-color: #ff0f0f;
-    --white-color: #fcf7f7;
-    --green-color: #36f221;
-    --black-color: #181710;
-    --blue-color: #0004f5;
-    --a-color: #e8e005;
+:root {
+  /*color preset*/
+  --red-color: #ff0f0f;
+  --white-color: #fcf7f7;
+  --green-color: #36f221;
+  --black-color: #181710;
+  --blue-color: #0004f5;
+  --a-color: #e8e005;
 
-    --padding: 8px 12px;
-  }
-
+  --padding: 8px 12px;
+}
 
 body {
-  
   color: black;
   background-color: #212121;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  
 }
 
 a {
@@ -55,52 +53,46 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   color: var(--white-color);
   font-family: 'Poppins', sans-serif;
-  
 }
 
-.navbar .logoandtitle .mlogo{
+.navbar .logoandtitle .mlogo {
   width: 2.7rem;
 }
 
-
-.navbar .logoandtitle .title{
+.navbar .logoandtitle .title {
   font-size: 25px;
 }
 
-.navbar .pcicons{
+.navbar .pcicons {
   display: none;
 }
 
-.navbar .icons{
-     font-size: 23px;
-     text-align: center;
- }
+.navbar .icons {
+  font-size: 23px;
+  text-align: center;
+}
 
- .navbar .icons .instagram{
-   color:var(--red-color);
- }
- 
- .navbar .icons .whatsapp{
-     color: var(--green-color);
- }
+.navbar .icons .instagram {
+  color: var(--red-color);
+}
 
- .navbar .icons .facebook{
-     color: var(--blue-color);
- }
+.navbar .icons .whatsapp {
+  color: var(--green-color);
+}
 
+.navbar .icons .facebook {
+  color: var(--blue-color);
+}
 
-.container{
-  
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  
+  margin-top: 4rem;
 }
 
-.container .card{
-  
+.container .card {
   width: 260px;
   height: 215px;
   background: #fff;
@@ -108,9 +100,8 @@ body::-webkit-scrollbar-thumb {
   padding: 20px 15px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
-  
 }
 
 /* .container .card:hover{
@@ -121,28 +112,22 @@ body::-webkit-scrollbar-thumb {
   height: 420px;
 }
 
-
-
-.container .card .imgBx{
+.container .card .imgBx {
   position: relative;
   width: 260px;
   height: 260px;
   top: -60px;
   z-index: 1;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-  
- 
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.container .card .imgBx img{
+.container .card .imgBx img {
   width: 100%;
   height: 100%;
   border-radius: 4px;
- 
 }
 
-.container .card .content{
-  
+.container .card .content {
   margin-top: -140px;
   padding: 10px 15px;
   text-align: center;
@@ -159,7 +144,7 @@ body::-webkit-scrollbar-thumb {
   transition-delay: 0.3s;
 } */
 
-.container .card.clicked .content{
+.container .card.clicked .content {
   visibility: visible;
   opacity: 1;
   margin-top: -85px;
@@ -175,7 +160,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:var(--black-color);
+  background-color: var(--black-color);
   background-color: rgba(0, 0, 0, 0.3); /*부모만 opacity주기*/
   font-size: 30px;
   font-family: Fredericka the Great;
@@ -183,26 +168,22 @@ body::-webkit-scrollbar-thumb {
   bottom: 0;
   z-index: 2;
   color: var(--white-color);
-  
-
 }
 
-
 .menubar a {
-  cursor:pointer;
+  cursor: pointer;
   text-align: center;
   padding: 4px;
   opacity: 1;
   position: sticky;
   bottom: 0;
   width: 95%;
-  
 }
 
 .menubar a:hover {
-    background-color: rgb(180, 58, 36);
-    border-radius: 10px;
-    font-size: 0;
+  background-color: rgb(180, 58, 36);
+  border-radius: 10px;
+  font-size: 0;
 }
 
 .menubar a:hover:after {
@@ -210,31 +191,27 @@ body::-webkit-scrollbar-thumb {
   font-size: 2rem;
 }
 
-
-.menubar.active{
+.menubar.active {
   display: none;
 }
 
-.onoff{
+.onoff {
   cursor: pointer;
   position: sticky;
   bottom: 13.8rem;
-  
+
   color: var(--white-color);
-
 }
 
-.onoff i{
+.onoff i {
   font-size: 2rem;
-  
 }
 
-.onoff .arrow.clicked{
+.onoff .arrow.clicked {
   transform: rotate(270deg);
 }
 
 @media screen and (min-width: 768px) {
-  
   .container {
     display: flex;
     flex-direction: row;
@@ -246,21 +223,21 @@ body::-webkit-scrollbar-thumb {
     margin-top: 3rem;
   }
 
-  .menubar{
+  .menubar {
     width: 20vw;
-    
+
     left: 40vw;
   }
 
-  .menubar{
-    border-radius: 10px
+  .menubar {
+    border-radius: 10px;
   }
 
-  .onoff{
+  .onoff {
     left: 40vw;
   }
 
-  .onoff.clicked{
+  .onoff.clicked {
     left: 0;
   }
 }

@@ -1,14 +1,14 @@
 const jajangprice = 10;
-const jampongprice = 12;
+const jampongprice = 13;
 const tansuYuk =22;
 const jajangset = jajangprice*2 + tansuYuk -5;
 const jjampongset = jampongprice*2 + tansuYuk -5;
 const jjamjjaset = jajangprice + jampongprice + tansuYuk -5;
-const doenjangjjigae = 9;
-const budaejjigae = 12;
-const dosirak = 8;
-const doenjangjjigaeset = doenjangjjigae + dosirak - 2;
-const budaejjigaeset = budaejjigae + dosirak -2;
+const doenjangjjigae = 10;
+const budaejjigae = 13;
+const dosirak = 10;
+const doenjangjjigaeset = doenjangjjigae + dosirak - 5;
+const budaejjigaeset = budaejjigae + dosirak -5;
 const whiterice = 1;
 
 
@@ -38,15 +38,15 @@ const whiterice = 1;
     document.querySelector(".priceshowing2").innerHTML = "$"+totalprice2;
 
 
-      if(document.querySelector('.priceshowing2').innerHTML === '$12'){
+      if(document.querySelector('.priceshowing2').innerHTML === '$13'){
         document.querySelector('.customer_order2').value = "JjamPpong 1"}
-      else if(document.querySelector('.priceshowing2').innerHTML === '$24')
+      else if(document.querySelector('.priceshowing2').innerHTML === '$26')
       {document.querySelector('.customer_order2').value = "JjamPpong 2"}
-      else if(document.querySelector('.priceshowing2').innerHTML === '$36')
+      else if(document.querySelector('.priceshowing2').innerHTML === '$39')
       {document.querySelector('.customer_order2').value = "JjamPpong 3"}
-      else if(document.querySelector('.priceshowing2').innerHTML === '$48')
+      else if(document.querySelector('.priceshowing2').innerHTML === '$52')
       {document.querySelector('.customer_order2').value = "JjamPpong 4"}
-      else if(document.querySelector('.priceshowing2').innerHTML === '$60')
+      else if(document.querySelector('.priceshowing2').innerHTML === '$65')
       {document.querySelector('.customer_order2').value = "JjamPpong 5"}
       else {document.querySelector('.customer_order2').value = ""}
 
@@ -91,15 +91,15 @@ const whiterice = 1;
     const totalprice5 = jjampongset*countitem5;
     document.querySelector(".priceshowing5").innerHTML = "$"+totalprice5;
 
-    if(document.querySelector('.priceshowing5').innerHTML === '$41'){
+    if(document.querySelector('.priceshowing5').innerHTML === '$43'){
       document.querySelector('.customer_order5').value = "JjamPpong Set 1"}
-    else if(document.querySelector('.priceshowing5').innerHTML === '$82')
+    else if(document.querySelector('.priceshowing5').innerHTML === '$86')
     {document.querySelector('.customer_order5').value = "JjamPpong Set 2"}
-    else if(document.querySelector('.priceshowing5').innerHTML === '$123')
+    else if(document.querySelector('.priceshowing5').innerHTML === '$129')
     {document.querySelector('.customer_order5').value = "JjamPpong Set 3"}
-    else if(document.querySelector('.priceshowing5').innerHTML === '$164')
+    else if(document.querySelector('.priceshowing5').innerHTML === '$172')
     {document.querySelector('.customer_order5').value = "JjamPpong Set 4"}
-    else if(document.querySelector('.priceshowing5').innerHTML === '$205')
+    else if(document.querySelector('.priceshowing5').innerHTML === '$215')
     {document.querySelector('.customer_order5').value = "JjamPpong Set 5"}
     else {document.querySelector('.customer_order5').value = ""}
 
@@ -108,15 +108,15 @@ const whiterice = 1;
     const totalprice6 = jjamjjaset*countitem6;
     document.querySelector(".priceshowing6").innerHTML = "$"+totalprice6;
 
-    if(document.querySelector('.priceshowing6').innerHTML === '$39'){
+    if(document.querySelector('.priceshowing6').innerHTML === '$40'){
       document.querySelector('.customer_order6').value = "JjamJja Set 1"}
-    else if(document.querySelector('.priceshowing6').innerHTML === '$78')
+    else if(document.querySelector('.priceshowing6').innerHTML === '$80')
     {document.querySelector('.customer_order6').value = "JjamJja Set 2"}
-    else if(document.querySelector('.priceshowing6').innerHTML === '$117')
+    else if(document.querySelector('.priceshowing6').innerHTML === '$120')
     {document.querySelector('.customer_order6').value = "JjamJja Set 3"}
-    else if(document.querySelector('.priceshowing6').innerHTML === '$156')
+    else if(document.querySelector('.priceshowing6').innerHTML === '$160')
     {document.querySelector('.customer_order6').value = "JjamJja Set 4"}
-    else if(document.querySelector('.priceshowing6').innerHTML === '$195')
+    else if(document.querySelector('.priceshowing6').innerHTML === '$200')
     {document.querySelector('.customer_order6').value = "JjamJja Set 5"}
     else {document.querySelector('.customer_order6').value = ""}
 
@@ -125,15 +125,15 @@ const whiterice = 1;
     const totalprice7 = doenjangjjigae*countitem7;
     document.querySelector(".priceshowing7").innerHTML = "$"+totalprice7;
 
-    if(document.querySelector('.priceshowing7').innerHTML === '$9'){
+    if(document.querySelector('.priceshowing7').innerHTML === '$10'){
       document.querySelector('.customer_order7').value = "DoenJangJjiGae 1"}
-    else if(document.querySelector('.priceshowing7').innerHTML === '$18')
+    else if(document.querySelector('.priceshowing7').innerHTML === '$20')
     {document.querySelector('.customer_order7').value = "DoenJangJjiGae 2"}
-    else if(document.querySelector('.priceshowing7').innerHTML === '$27')
+    else if(document.querySelector('.priceshowing7').innerHTML === '$30')
     {document.querySelector('.customer_order7').value = "DoenJangJjiGae 3"}
-    else if(document.querySelector('.priceshowing7').innerHTML === '$36')
+    else if(document.querySelector('.priceshowing7').innerHTML === '$40')
     {document.querySelector('.customer_order7').value = "DoenJangJjiGae 4"}
-    else if(document.querySelector('.priceshowing7').innerHTML === '$45')
+    else if(document.querySelector('.priceshowing7').innerHTML === '$50')
     {document.querySelector('.customer_order7').value = "DoenJangJjiGae 5"}
     else {document.querySelector('.customer_order7').value = ""}
 
@@ -142,15 +142,15 @@ const whiterice = 1;
     const totalprice8 = budaejjigae*countitem8;
     document.querySelector(".priceshowing8").innerHTML = "$"+totalprice8;
 
-    if(document.querySelector('.priceshowing8').innerHTML === '$12'){
+    if(document.querySelector('.priceshowing8').innerHTML === '$13'){
       document.querySelector('.customer_order8').value = "BudaeJjiGae 1"}
-    else if(document.querySelector('.priceshowing8').innerHTML === '$24')
+    else if(document.querySelector('.priceshowing8').innerHTML === '$26')
     {document.querySelector('.customer_order8').value = "BudaeJjiGae 2"}
-    else if(document.querySelector('.priceshowing8').innerHTML === '$36')
+    else if(document.querySelector('.priceshowing8').innerHTML === '$39')
     {document.querySelector('.customer_order8').value = "BudaeJjiGae 3"}
-    else if(document.querySelector('.priceshowing8').innerHTML === '$48')
+    else if(document.querySelector('.priceshowing8').innerHTML === '$52')
     {document.querySelector('.customer_order8').value = "BudaeJjiGae 4"}
-    else if(document.querySelector('.priceshowing8').innerHTML === '$60')
+    else if(document.querySelector('.priceshowing8').innerHTML === '$65')
     {document.querySelector('.customer_order8').value = "BudaeJjiGae 5"}
     else {document.querySelector('.customer_order8').value = ""}
 
@@ -159,16 +159,16 @@ const whiterice = 1;
     const totalprice9 = dosirak*countitem9;
     document.querySelector(".priceshowing9").innerHTML = "$"+totalprice9;
 
-    if(document.querySelector('.priceshowing9').innerHTML === '$8'){
-      document.querySelector('.customer_order9').value = "Dosirak 1"}
-    else if(document.querySelector('.priceshowing9').innerHTML === '$16')
-    {document.querySelector('.customer_order9').value = "Dosirak 2"}
-    else if(document.querySelector('.priceshowing9').innerHTML === '$24')
-    {document.querySelector('.customer_order9').value = "Dosirak 3"}
-    else if(document.querySelector('.priceshowing9').innerHTML === '$32')
-    {document.querySelector('.customer_order9').value = "Dosirak 4"}
+    if(document.querySelector('.priceshowing9').innerHTML === '$10'){
+      document.querySelector('.customer_order9').value = "BabSang 1"}
+    else if(document.querySelector('.priceshowing9').innerHTML === '$20')
+    {document.querySelector('.customer_order9').value = "BabSang 2"}
+    else if(document.querySelector('.priceshowing9').innerHTML === '$30')
+    {document.querySelector('.customer_order9').value = "BabSang 3"}
     else if(document.querySelector('.priceshowing9').innerHTML === '$40')
-    {document.querySelector('.customer_order9').value = "Dosirak 5"}
+    {document.querySelector('.customer_order9').value = "BabSang 4"}
+    else if(document.querySelector('.priceshowing9').innerHTML === '$50')
+    {document.querySelector('.customer_order9').value = "BabSang 5"}
     else {document.querySelector('.customer_order9').value = ""}
 
     //된장찌개 세트
@@ -177,15 +177,15 @@ const whiterice = 1;
     document.querySelector(".priceshowing10").innerHTML = "$"+totalprice10;
 
     if(document.querySelector('.priceshowing10').innerHTML === '$15'){
-      document.querySelector('.customer_order10').value = "DoenJangJjiGae(dosirak) Set 1"}
+      document.querySelector('.customer_order10').value = "DoenJangJjiGae Set 1"}
     else if(document.querySelector('.priceshowing10').innerHTML === '$30')
-    {document.querySelector('.customer_order10').value = "DoenJangJjiGae(dosirak) Set 2"}
+    {document.querySelector('.customer_order10').value = "DoenJangJjiGae Set 2"}
     else if(document.querySelector('.priceshowing10').innerHTML === '$45')
-    {document.querySelector('.customer_order10').value = "DoenJangJjiGae(dosirak) Set 3"}
+    {document.querySelector('.customer_order10').value = "DoenJangJjiGae Set 3"}
     else if(document.querySelector('.priceshowing10').innerHTML === '$60')
-    {document.querySelector('.customer_order10').value = "DoenJangJjiGae(dosirak) Set 4"}
+    {document.querySelector('.customer_order10').value = "DoenJangJjiGae Set 4"}
     else if(document.querySelector('.priceshowing10').innerHTML === '$75')
-    {document.querySelector('.customer_order10').value = "DoenJangJjiGae(dosirak) Set 5"}
+    {document.querySelector('.customer_order10').value = "DoenJangJjiGae Set 5"}
     else {document.querySelector('.customer_order10').value = ""}
 
 

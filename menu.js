@@ -2,6 +2,7 @@ const menu = document.querySelector(".menubar");
 const onoff = document.querySelector(".onoff");
 const arrow = document.querySelector('.arrow');
 
+
 //cards
 const card = document.querySelector('.card')
 const card2 = document.querySelector('.card2')
@@ -16,6 +17,8 @@ const card10 = document.querySelector('.card10')
 const card11 = document.querySelector('.card11')
 const card12 = document.querySelector('.card12')
 
+
+//메뉴조절
 onoff.addEventListener('click', ()=>{
     menu.classList.toggle('active');
     arrow.classList.toggle('clicked');
