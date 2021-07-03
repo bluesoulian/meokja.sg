@@ -366,3 +366,11 @@ document.querySelector('.next').addEventListener('click', ()=>{
   document.querySelector('.ok').classList.toggle("clicked")
 });
 
+//if click email address show
+
+const ebtn = document.querySelector('.ebtn')
+const email = document.querySelector('.email')
+
+ebtn.addEventListener('click', ()=>{
+  email.innerHTML = "jungga.meokjasg@gmail.com"
+})
