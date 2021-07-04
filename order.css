@@ -18,6 +18,11 @@ body::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
 
+a{
+  text-decoration: none;
+ 
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -53,7 +58,7 @@ body::-webkit-scrollbar-thumb {
   padding: 20px;
   background: rgb(173, 150, 131);
   color: black;
-  overflow-x: visible;
+
   
 }
 

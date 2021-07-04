@@ -1,0 +1,216 @@
+:root{
+    --grey-color: rgb(128, 128, 128);
+    --board-background-color: rgb(250, 244, 244);
+    --red-color: #ff0f0f;
+    --white-color: #fcf7f7;
+    --green-color: #36f221;
+    --black-color: #181710;
+    --blue-color: #0004f5;
+    --a-color: #e8e005;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+  }
+
+body {
+    background-color: #212121;
+    font-family: Fredericka the Great;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--black-color);
+    font-family: Fredericka the Great;
+    align-items: center;
+  }
+  
+  /*네비게이션 바의 로고랑 타이틀 설정*/
+  
+  .navbar .logoandtitle {
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navbar .logoandtitle .mlogo {
+    width: 2.7rem;
+  }
+  
+  .navbar .logoandtitle .title {
+    font-size: 25px;
+  }
+  
+  .navbar .pcicons {
+    display: none;
+  }
+  
+  .navbar .icons {
+    font-size: 23px;
+    text-align: center;
+    margin-right: 10px;
+  }
+  
+  .navbar .icons .instagram {
+    color: var(--red-color);
+  }
+  
+  .navbar .icons .whatsapp {
+    color: var(--green-color);
+  }
+  
+  .navbar .icons .facebook {
+    color: var(--blue-color);
+  }
+
+.story {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px dotted black;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    padding: 3rem 0;
+    background: var(--board-background-color);
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.story .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story .title{
+    font-size: 3rem;
+}
+
+.story .name{
+    margin-top: 0.5rem;
+}
+
+.story .content .job{
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--grey-color)
+}
+
+.story .content .greeting{
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+
+.img {
+    margin-top: 2rem;
+    width: 15rem;
+    height: 20rem;
+    border-radius: 10px;
+}
+
+.menubar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-color);
+    background-color: rgba(0, 0, 0, 0.3); /*부모만 opacity주기*/
+    font-size: 30px;
+    font-family: Fredericka the Great;
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    color: var(--white-color);
+  }
+  
+  .menubar a {
+    cursor: pointer;
+    text-align: center;
+    padding: 4px;
+    opacity: 1;
+    position: sticky;
+    bottom: 0;
+    width: 95%;
+  }
+  
+  .menubar a:hover {
+    background-color: rgb(180, 58, 36);
+    border-radius: 10px;
+    font-size: 0;
+  }
+  
+  .menubar a:hover:after {
+    content: attr(data-hover);
+    font-size: 2rem;
+  }
+  
+  .menubar.active {
+    display: none;
+  }
+  
+  .onoff {
+    cursor: pointer;
+    position: sticky;
+    bottom: 13.8rem;
+  
+    color: var(--white-color);
+  }
+  
+  .onoff i {
+    font-size: 2rem;
+  }
+  
+  .onoff .arrow.clicked {
+    transform: rotate(270deg);
+  }
+
+  @media screen and (min-width: 768px) {
+      .story {
+          max-width: 800px;
+      }
+
+      
+  .menubar {
+    width: 20vw;
+
+    left: 40vw;
+  }
+
+  .menubar {
+    border-radius: 10px;
+  }
+
+  .onoff {
+    left: 40vw;
+  }
+
+  .onoff.clicked {
+    left: 0;
+  }
+}
+  }

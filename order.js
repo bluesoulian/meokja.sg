@@ -323,13 +323,14 @@ const whiterice = 1;
       document.querySelector('.submit').disabled = true; 
       document.getElementById('Delivery_options').disabled = true;     
       document.querySelector('.next').disabled = true; 
+      
    }else if(document.querySelector('.sumup').value >= 25) {
     document.querySelector('.submit').disabled = false;
     document.getElementById('Delivery_options').disabled = false;
     document.querySelector('.next').disabled = false;    
    }
 
-}
+} 
 
 
 function addDeliver() {
@@ -364,6 +365,7 @@ document.querySelector('.next').addEventListener('click', ()=>{
   document.querySelector('.menus').classList.toggle("clicked")
   document.querySelector('.totalbox2').classList.toggle("clicked")
   document.querySelector('.ok').classList.toggle("clicked")
+  
 });
 
 //if click email address show
