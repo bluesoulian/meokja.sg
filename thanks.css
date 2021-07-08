@@ -90,6 +90,11 @@ body {
 @media screen and (min-width: 768px) {
   .Thanks {
     width: 500px;
+    
+  }
+
+  .long__Message{
+    border-radius: 10px;
   }
 
 }
