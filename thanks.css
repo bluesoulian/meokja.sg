@@ -29,7 +29,6 @@ body {
   align-items: center;
 }
 
-
 .Thanks .Thankyou__Message {
   text-align: center;
   font-size: 3rem;
@@ -45,6 +44,7 @@ body {
   background: var(--white-color);
   height: 20rem;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .Thanks p {
@@ -87,15 +87,12 @@ body {
   color: grey;
 }
 
-
 @media screen and (min-width: 768px) {
   .Thanks {
     width: 500px;
-    
   }
 
-  .long__Message{
+  .long__Message {
     border-radius: 10px;
   }
-
 }
