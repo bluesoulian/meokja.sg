@@ -29,7 +29,7 @@ const whiterice = 1;
       {document.querySelector('.customer_order').value = "JjaJang 4"}
       else if(document.querySelector('.priceshowing').innerHTML === '$50')
       {document.querySelector('.customer_order').value = "JjaJang 5"}
-      else {document.querySelector('.customer_order').value = "0"}
+      else {document.querySelector('.customer_order').value = "-"}
 
 
     //짬뽕
@@ -48,7 +48,7 @@ const whiterice = 1;
       {document.querySelector('.customer_order2').value = "JjamPpong 4"}
       else if(document.querySelector('.priceshowing2').innerHTML === '$65')
       {document.querySelector('.customer_order2').value = "JjamPpong 5"}
-      else {document.querySelector('.customer_order2').value = "0"}
+      else {document.querySelector('.customer_order2').value = "-"}
 
     //탕수육
     const countitem3 = document.querySelector(".countitem3").value;
@@ -65,7 +65,7 @@ const whiterice = 1;
     {document.querySelector('.customer_order3').value = "TangSuYuk 4"}
     else if(document.querySelector('.priceshowing3').innerHTML === '$110')
     {document.querySelector('.customer_order3').value = "TangSuYuk 5"}
-    else {document.querySelector('.customer_order3').value = "0"}
+    else {document.querySelector('.customer_order3').value = "-"}
 
     //짜장셋
     const countitem4 = document.querySelector(".countitem4").value;
@@ -82,7 +82,7 @@ const whiterice = 1;
     {document.querySelector('.customer_order4').value = "JjaJang Set 4"}
     else if(document.querySelector('.priceshowing4').innerHTML === '$185')
     {document.querySelector('.customer_order4').value = "JjaJang Set 5"}
-    else {document.querySelector('.customer_order4').value = "0"}
+    else {document.querySelector('.customer_order4').value = "-"}
 
 
     //짬뽕셋
@@ -101,7 +101,7 @@ const whiterice = 1;
     {document.querySelector('.customer_order5').value = "JjamPpong Set 4"}
     else if(document.querySelector('.priceshowing5').innerHTML === '$215')
     {document.querySelector('.customer_order5').value = "JjamPpong Set 5"}
-    else {document.querySelector('.customer_order5').value = "0"}
+    else {document.querySelector('.customer_order5').value = "-"}
 
     //짬짜셋
     const countitem6 = document.querySelector(".countitem6").value;
@@ -118,7 +118,7 @@ const whiterice = 1;
     {document.querySelector('.customer_order6').value = "JjamJja Set 4"}
     else if(document.querySelector('.priceshowing6').innerHTML === '$200')
     {document.querySelector('.customer_order6').value = "JjamJja Set 5"}
-    else {document.querySelector('.customer_order6').value = "0"}
+    else {document.querySelector('.customer_order6').value = "-"}
 
     //된장찌개
     const countitem7 = document.querySelector(".countitem7").value;
@@ -135,7 +135,7 @@ const whiterice = 1;
     {document.querySelector('.customer_order7').value = "DoenJangJjiGae 4"}
     else if(document.querySelector('.priceshowing7').innerHTML === '$50')
     {document.querySelector('.customer_order7').value = "DoenJangJjiGae 5"}
-    else {document.querySelector('.customer_order7').value = "0"}
+    else {document.querySelector('.customer_order7').value = "-"}
 
     //부대찌개
     const countitem8 = document.querySelector(".countitem8").value;
@@ -152,7 +152,7 @@ const whiterice = 1;
     {document.querySelector('.customer_order8').value = "BudaeJjiGae 4"}
     else if(document.querySelector('.priceshowing8').innerHTML === '$65')
     {document.querySelector('.customer_order8').value = "BudaeJjiGae 5"}
-    else {document.querySelector('.customer_order8').value = "0"}
+    else {document.querySelector('.customer_order8').value = "-"}
 
     //도시락
     const countitem9 = document.querySelector(".countitem9").value;
@@ -169,7 +169,7 @@ const whiterice = 1;
     {document.querySelector('.customer_order9').value = "BabSang 4"}
     else if(document.querySelector('.priceshowing9').innerHTML === '$50')
     {document.querySelector('.customer_order9').value = "BabSang 5"}
-    else {document.querySelector('.customer_order9').value = "0"}
+    else {document.querySelector('.customer_order9').value = "-"}
 
     //된장찌개 세트
     const countitem10 = document.querySelector(".countitem10").value;
@@ -186,7 +186,7 @@ const whiterice = 1;
     {document.querySelector('.customer_order10').value = "DoenJangJjiGae Set 4"}
     else if(document.querySelector('.priceshowing10').innerHTML === '$75')
     {document.querySelector('.customer_order10').value = "DoenJangJjiGae Set 5"}
-    else {document.querySelector('.customer_order10').value = "0"}
+    else {document.querySelector('.customer_order10').value = "-"}
 
 
     //부대찌개 세트
@@ -204,7 +204,7 @@ const whiterice = 1;
     {document.querySelector('.customer_order11').value = "BudaeJjiGae Set 4"}
     else if(document.querySelector('.priceshowing11').innerHTML === '$90')
     {document.querySelector('.customer_order11').value = "BudaeJjiGae Set 5"}
-    else {document.querySelector('.customer_order11').value = "0"}
+    else {document.querySelector('.customer_order11').value = "-"}
 
     //공깃밥
     const countitem12 = document.querySelector(".countitem12").value;
@@ -221,7 +221,7 @@ const whiterice = 1;
     {document.querySelector('.customer_order12').value = "WhiteRice 4"}
     else if(document.querySelector('.priceshowing12').innerHTML === '$5')
     {document.querySelector('.customer_order12').value = "WhiteRice 5"}
-    else {document.querySelector('.customer_order12').value = "0"}
+    else {document.querySelector('.customer_order12').value = "-"}
 
     //합친가격 및 디테일
     
