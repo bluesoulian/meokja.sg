@@ -111,18 +111,24 @@ body::-webkit-scrollbar {
 }
 
 .story .name{
+    font-size: 1.2rem;
     margin-top: 0.5rem;
 }
 
 .story .content .job{
     margin-top: 0.5rem;
     font-size: 0.8rem;
-    color: var(--grey-color)
+    color: var(--grey-color);
+    font-family: sans-serif;
 }
 
 .story .content .greeting{
     text-align: center;
-    margin-top: 0.8rem;
+    margin-top: 0.7rem;
+    padding: 0 10px;
+    line-height: 23px;
+    font-family: sans-serif;
+
 }
 
 
