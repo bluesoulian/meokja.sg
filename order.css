@@ -2,8 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;;
-
+  font-family: 'Quicksand', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -18,9 +17,8 @@ body::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
 
-a{
+a {
   text-decoration: none;
- 
 }
 
 .form {
@@ -58,8 +56,6 @@ a{
   padding: 20px;
   background: rgb(173, 150, 131);
   color: black;
-
-  
 }
 
 .icons {
@@ -257,19 +253,22 @@ a{
   flex: 0 0 33.333333%;
 }
 
-
-.menus .FriedKimchi{
+.menus .FriedKimchi {
   display: flex;
   flex-direction: column;
-  
 }
 
-.menus .tteokgangjung{
+.menus .tteokgangjung {
   display: flex;
   flex-direction: column;
   flex: 0 0 33.333333%;
 }
 
+.menus .empty {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 33.333333%;
+}
 
 .menus img {
   width: 5rem;
