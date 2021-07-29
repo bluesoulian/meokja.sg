@@ -240,27 +240,36 @@ a{
   flex: 0 0 33.333333%;
 }
 
-.menus .Dosirak {
+.menus .BanBanChicken {
   display: flex;
   flex-direction: column;
-}
-
-.menus .DoenjangjjigaeSet {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 33.333333%;
-}
-
-.menus .BudaejjigaeSet {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 33.333333%;
 }
 
 .menus .Whiterice {
   display: flex;
   flex-direction: column;
+  flex: 0 0 33.333333%;
 }
+
+.menus .radishpickle {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 33.333333%;
+}
+
+
+.menus .FriedKimchi{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.menus .tteokgangjung{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 33.333333%;
+}
+
 
 .menus img {
   width: 5rem;

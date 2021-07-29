@@ -6,10 +6,11 @@ const jjampongset = jampongprice*2 + tansuYuk -5;
 const jjamjjaset = jajangprice + jampongprice + tansuYuk -5;
 const doenjangjjigae = 10;
 const budaejjigae = 13;
-const dosirak = 10;
-const doenjangjjigaeset = doenjangjjigae + dosirak - 5;
-const budaejjigaeset = budaejjigae + dosirak -5;
+const banbanchicken = 18;
 const whiterice = 1;
+const radishipickle = 6;
+const friedkimchi = 8;
+const tteokgangjung = 3;
 
 
   const getprice = ( ) =>{
@@ -154,57 +155,22 @@ const whiterice = 1;
     {document.querySelector('.customer_order8').value = "BudaeJjiGae 5"}
     else {document.querySelector('.customer_order8').value = "-"}
 
-    //도시락
+    //반반치킨
     const countitem9 = document.querySelector(".countitem9").value;
-    const totalprice9 = dosirak*countitem9;
+    const totalprice9 = banbanchicken*countitem9;
     document.querySelector(".priceshowing9").innerHTML = "$"+totalprice9;
 
-    if(document.querySelector('.priceshowing9').innerHTML === '$10'){
-      document.querySelector('.customer_order9').value = "BabSang 1"}
-    else if(document.querySelector('.priceshowing9').innerHTML === '$20')
-    {document.querySelector('.customer_order9').value = "BabSang 2"}
-    else if(document.querySelector('.priceshowing9').innerHTML === '$30')
-    {document.querySelector('.customer_order9').value = "BabSang 3"}
-    else if(document.querySelector('.priceshowing9').innerHTML === '$40')
-    {document.querySelector('.customer_order9').value = "BabSang 4"}
-    else if(document.querySelector('.priceshowing9').innerHTML === '$50')
-    {document.querySelector('.customer_order9').value = "BabSang 5"}
+    if(document.querySelector('.priceshowing9').innerHTML === '$18'){
+      document.querySelector('.customer_order9').value = "BanBan 1"}
+    else if(document.querySelector('.priceshowing9').innerHTML === '$36')
+    {document.querySelector('.customer_order9').value = "BanBan 2"}
+    else if(document.querySelector('.priceshowing9').innerHTML === '$54')
+    {document.querySelector('.customer_order9').value = "BanBan 3"}
+    else if(document.querySelector('.priceshowing9').innerHTML === '$72')
+    {document.querySelector('.customer_order9').value = "BanBan 4"}
+    else if(document.querySelector('.priceshowing9').innerHTML === '$90')
+    {document.querySelector('.customer_order9').value = "BanBan 5"}
     else {document.querySelector('.customer_order9').value = "-"}
-
-    //된장찌개 세트
-    const countitem10 = document.querySelector(".countitem10").value;
-    const totalprice10 = doenjangjjigaeset*countitem10;
-    document.querySelector(".priceshowing10").innerHTML = "$"+totalprice10;
-
-    if(document.querySelector('.priceshowing10').innerHTML === '$15'){
-      document.querySelector('.customer_order10').value = "DoenJangJjiGae Set 1"}
-    else if(document.querySelector('.priceshowing10').innerHTML === '$30')
-    {document.querySelector('.customer_order10').value = "DoenJangJjiGae Set 2"}
-    else if(document.querySelector('.priceshowing10').innerHTML === '$45')
-    {document.querySelector('.customer_order10').value = "DoenJangJjiGae Set 3"}
-    else if(document.querySelector('.priceshowing10').innerHTML === '$60')
-    {document.querySelector('.customer_order10').value = "DoenJangJjiGae Set 4"}
-    else if(document.querySelector('.priceshowing10').innerHTML === '$75')
-    {document.querySelector('.customer_order10').value = "DoenJangJjiGae Set 5"}
-    else {document.querySelector('.customer_order10').value = "-"}
-
-
-    //부대찌개 세트
-    const countitem11 = document.querySelector(".countitem11").value;
-    const totalprice11 = budaejjigaeset*countitem11;
-    document.querySelector(".priceshowing11").innerHTML = "$"+totalprice11;
-
-    if(document.querySelector('.priceshowing11').innerHTML === '$18'){
-      document.querySelector('.customer_order11').value = "BudaeJjiGae Set 1"}
-    else if(document.querySelector('.priceshowing11').innerHTML === '$36')
-    {document.querySelector('.customer_order11').value = "BudaeJjiGae Set 2"}
-    else if(document.querySelector('.priceshowing11').innerHTML === '$54')
-    {document.querySelector('.customer_order11').value = "BudaeJjiGae Set 3"}
-    else if(document.querySelector('.priceshowing11').innerHTML === '$72')
-    {document.querySelector('.customer_order11').value = "BudaeJjiGae Set 4"}
-    else if(document.querySelector('.priceshowing11').innerHTML === '$90')
-    {document.querySelector('.customer_order11').value = "BudaeJjiGae Set 5"}
-    else {document.querySelector('.customer_order11').value = "-"}
 
     //공깃밥
     const countitem12 = document.querySelector(".countitem12").value;
@@ -223,19 +189,70 @@ const whiterice = 1;
     {document.querySelector('.customer_order12').value = "WhiteRice 5"}
     else {document.querySelector('.customer_order12').value = "-"}
 
+    //래디쉬 피클
+    const countitem13 = document.querySelector(".countitem13").value;
+    const totalprice13 = radishipickle*countitem13;
+    document.querySelector(".priceshowing13").innerHTML = "$"+totalprice13;
+
+    if(document.querySelector('.priceshowing13').innerHTML === '$6'){
+      document.querySelector('.customer_order13').value = "RadishPickle 1"}
+    else if(document.querySelector('.priceshowing13').innerHTML === '$12')
+    {document.querySelector('.customer_order13').value = "RadishPickle 2"}
+    else if(document.querySelector('.priceshowing13').innerHTML === '$18')
+    {document.querySelector('.customer_order13').value = "RadishPickle 3"}
+    else if(document.querySelector('.priceshowing13').innerHTML === '$24')
+    {document.querySelector('.customer_order13').value = "RadishPickle 4"}
+    else if(document.querySelector('.priceshowing13').innerHTML === '$30')
+    {document.querySelector('.customer_order13').value = "RadishPickle 5"}
+    else {document.querySelector('.customer_order13').value = "-"}
+    
+    //프라이드 김치
+    const countitem14 = document.querySelector(".countitem14").value;
+    const totalprice14 = friedkimchi*countitem14;
+    document.querySelector(".priceshowing14").innerHTML = "$"+totalprice14;
+
+    if(document.querySelector('.priceshowing14').innerHTML === '$8'){
+      document.querySelector('.customer_order14').value = "FriedKimchi 1"}
+    else if(document.querySelector('.priceshowing14').innerHTML === '$16')
+    {document.querySelector('.customer_order14').value = "FriedKimchi 2"}
+    else if(document.querySelector('.priceshowing14').innerHTML === '$24')
+    {document.querySelector('.customer_order14').value = "FriedKimchi 3"}
+    else if(document.querySelector('.priceshowing14').innerHTML === '$32')
+    {document.querySelector('.customer_order14').value = "FriedKimchi 4"}
+    else if(document.querySelector('.priceshowing14').innerHTML === '$40')
+    {document.querySelector('.customer_order14').value = "FriedKimchi 5"}
+    else {document.querySelector('.customer_order14').value = "-"}
+
+        //떡강정
+        const countitem15 = document.querySelector(".countitem15").value;
+        const totalprice15 = tteokgangjung*countitem15;
+        document.querySelector(".priceshowing15").innerHTML = "$"+totalprice15;
+    
+        if(document.querySelector('.priceshowing15').innerHTML === '$3'){
+          document.querySelector('.customer_order15').value = "tteokgangjung 1"}
+        else if(document.querySelector('.priceshowing15').innerHTML === '$6')
+        {document.querySelector('.customer_order15').value = "tteokgangjung 2"}
+        else if(document.querySelector('.priceshowing15').innerHTML === '$9')
+        {document.querySelector('.customer_order15').value = "tteokgangjung 3"}
+        else if(document.querySelector('.priceshowing15').innerHTML === '$12')
+        {document.querySelector('.customer_order15').value = "tteokgangjung 4"}
+        else if(document.querySelector('.priceshowing15').innerHTML === '$15')
+        {document.querySelector('.customer_order15').value = "tteokgangjung 5"}
+        else {document.querySelector('.customer_order15').value = "-"}
+
     //합친가격 및 디테일
     
     const sumup = totalprice + totalprice2 + totalprice3 +
     totalprice4 + totalprice5 + totalprice6 + totalprice7 +
-    totalprice8 + totalprice9 + totalprice10 + totalprice11 +
-    totalprice12;
+    totalprice8 + totalprice9 + totalprice12 + totalprice13 +
+    totalprice14 + totalprice15;
     
     document.querySelector('.sumup').value = sumup;
 
     const sumup2 = totalprice + totalprice2 + totalprice3 +
     totalprice4 + totalprice5 + totalprice6 + totalprice7 +
-    totalprice8 + totalprice9 + totalprice10 + totalprice11 +
-    totalprice12;
+    totalprice8 + totalprice9 + totalprice12 + totalprice13 + 
+    totalprice14 + totalprice15;
 
     document.querySelector('.sumup2').value = sumup2;
 
@@ -297,21 +314,33 @@ const whiterice = 1;
       document.querySelector('.sumup').value = ""
       document.querySelector('.sumup2').value = ""
     }
-    if(document.querySelector('.countitem10').value > 5) {
-      document.querySelector('.countitem10').value = ""
-      document.querySelector('.priceshowing10').innerHTML = ""
-      document.querySelector('.sumup').value = ""
-      document.querySelector('.sumup2').value = ""
-    }
-    if(document.querySelector('.countitem11').value > 5) {
-      document.querySelector('.countitem11').value = ""
-      document.querySelector('.priceshowing11').innerHTML = ""
-      document.querySelector('.sumup').value = ""
-      document.querySelector('.sumup2').value = ""
-    }
+
     if(document.querySelector('.countitem12').value > 5) {
       document.querySelector('.countitem12').value = ""
       document.querySelector('.priceshowing12').innerHTML = ""
+      document.querySelector('.sumup').value = ""
+      document.querySelector('.sumup2').value = ""
+    }
+
+    
+    if(document.querySelector('.countitem13').value > 5) {
+      document.querySelector('.countitem13').value = ""
+      document.querySelector('.priceshowing13').innerHTML = ""
+      document.querySelector('.sumup').value = ""
+      document.querySelector('.sumup2').value = ""
+    }
+
+    
+    if(document.querySelector('.countitem14').value > 5) {
+      document.querySelector('.countitem14').value = ""
+      document.querySelector('.priceshowing14').innerHTML = ""
+      document.querySelector('.sumup').value = ""
+      document.querySelector('.sumup2').value = ""
+    }
+
+    if(document.querySelector('.countitem15').value > 5) {
+      document.querySelector('.countitem15').value = ""
+      document.querySelector('.priceshowing15').innerHTML = ""
       document.querySelector('.sumup').value = ""
       document.querySelector('.sumup2').value = ""
     }

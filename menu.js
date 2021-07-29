@@ -16,6 +16,9 @@ const card9 = document.querySelector('.card9')
 const card10 = document.querySelector('.card10')
 const card11 = document.querySelector('.card11')
 const card12 = document.querySelector('.card12')
+const card13 = document.querySelector('.card13')
+const card14 = document.querySelector('.card14')
+const card15 = document.querySelector('.card15')
 
 
 //메뉴조절
@@ -62,14 +65,18 @@ card9.addEventListener('click', ()=> {
     card9.classList.toggle('clicked')
 });
 
-card10.addEventListener('click', ()=> {
-    card10.classList.toggle('clicked')
-});
-
-card11.addEventListener('click', ()=> {
-    card11.classList.toggle('clicked')
-});
-
 card12.addEventListener('click', ()=> {
     card12.classList.toggle('clicked')
+});
+
+card13.addEventListener('click', ()=> {
+    card13.classList.toggle('clicked')
+});
+
+card14.addEventListener('click', ()=> {
+    card14.classList.toggle('clicked')
+});
+
+card15.addEventListener('click', ()=> {
+    card15.classList.toggle('clicked')
 });
