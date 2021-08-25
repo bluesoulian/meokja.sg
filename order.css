@@ -224,7 +224,7 @@ a {
   flex-direction: column;
 }
 
-.menus .Doenjangjjigae {
+/* .menus .Doenjangjjigae {
   display: flex;
   flex-direction: column;
   flex: 0 0 33.333333%;
@@ -234,12 +234,13 @@ a {
   display: flex;
   flex-direction: column;
   flex: 0 0 33.333333%;
-}
+} */
 
-.menus .BanBanChicken {
+/* .menus .BanBanChicken {
   display: flex;
   flex-direction: column;
-}
+  flex: 0 0 33.333333%;
+} */
 
 .menus .Whiterice {
   display: flex;
@@ -264,10 +265,27 @@ a {
   flex: 0 0 33.333333%;
 }
 
-.menus .empty {
+.menus .tteokbokki {
+  display: flex;
+  flex-direction: column;  
+  flex: 0 0 33.333333%;
+}
+
+.menus .emougtang {
+  display: flex;
+  flex-direction: column;
+}
+
+.menus .bunsik {
   display: flex;
   flex-direction: column;
   flex: 0 0 33.333333%;
+}
+
+.menus .comingsoon {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 33.333333%
 }
 
 .menus img {

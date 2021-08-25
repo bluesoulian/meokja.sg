@@ -11,6 +11,10 @@ const whiterice = 1;
 const radishipickle = 6;
 const friedkimchi = 8;
 const tteokgangjung = 3;
+const tteokbokki = 18;
+const emougtang = 12;
+const bunsik = 35;
+const tteokbokkiB = 32;
 
 
   const getprice = ( ) =>{
@@ -121,56 +125,56 @@ const tteokgangjung = 3;
     {document.querySelector('.customer_order6').value = "JjamJja Set 5"}
     else {document.querySelector('.customer_order6').value = "-"}
 
-    //된장찌개
-    const countitem7 = document.querySelector(".countitem7").value;
-    const totalprice7 = doenjangjjigae*countitem7;
-    document.querySelector(".priceshowing7").innerHTML = "$"+totalprice7;
+    // //된장찌개
+    // const countitem7 = document.querySelector(".countitem7").value;
+    // const totalprice7 = doenjangjjigae*countitem7;
+    // document.querySelector(".priceshowing7").innerHTML = "$"+totalprice7;
 
-    if(document.querySelector('.priceshowing7').innerHTML === '$10'){
-      document.querySelector('.customer_order7').value = "DoenJangJjiGae 1"}
-    else if(document.querySelector('.priceshowing7').innerHTML === '$20')
-    {document.querySelector('.customer_order7').value = "DoenJangJjiGae 2"}
-    else if(document.querySelector('.priceshowing7').innerHTML === '$30')
-    {document.querySelector('.customer_order7').value = "DoenJangJjiGae 3"}
-    else if(document.querySelector('.priceshowing7').innerHTML === '$40')
-    {document.querySelector('.customer_order7').value = "DoenJangJjiGae 4"}
-    else if(document.querySelector('.priceshowing7').innerHTML === '$50')
-    {document.querySelector('.customer_order7').value = "DoenJangJjiGae 5"}
-    else {document.querySelector('.customer_order7').value = "-"}
+    // if(document.querySelector('.priceshowing7').innerHTML === '$10'){
+    //   document.querySelector('.customer_order7').value = "DoenJangJjiGae 1"}
+    // else if(document.querySelector('.priceshowing7').innerHTML === '$20')
+    // {document.querySelector('.customer_order7').value = "DoenJangJjiGae 2"}
+    // else if(document.querySelector('.priceshowing7').innerHTML === '$30')
+    // {document.querySelector('.customer_order7').value = "DoenJangJjiGae 3"}
+    // else if(document.querySelector('.priceshowing7').innerHTML === '$40')
+    // {document.querySelector('.customer_order7').value = "DoenJangJjiGae 4"}
+    // else if(document.querySelector('.priceshowing7').innerHTML === '$50')
+    // {document.querySelector('.customer_order7').value = "DoenJangJjiGae 5"}
+    // else {document.querySelector('.customer_order7').value = "-"}
 
-    //부대찌개
-    const countitem8 = document.querySelector(".countitem8").value;
-    const totalprice8 = budaejjigae*countitem8;
-    document.querySelector(".priceshowing8").innerHTML = "$"+totalprice8;
+    // //부대찌개
+    // const countitem8 = document.querySelector(".countitem8").value;
+    // const totalprice8 = budaejjigae*countitem8;
+    // document.querySelector(".priceshowing8").innerHTML = "$"+totalprice8;
 
-    if(document.querySelector('.priceshowing8').innerHTML === '$13'){
-      document.querySelector('.customer_order8').value = "BudaeJjiGae 1"}
-    else if(document.querySelector('.priceshowing8').innerHTML === '$26')
-    {document.querySelector('.customer_order8').value = "BudaeJjiGae 2"}
-    else if(document.querySelector('.priceshowing8').innerHTML === '$39')
-    {document.querySelector('.customer_order8').value = "BudaeJjiGae 3"}
-    else if(document.querySelector('.priceshowing8').innerHTML === '$52')
-    {document.querySelector('.customer_order8').value = "BudaeJjiGae 4"}
-    else if(document.querySelector('.priceshowing8').innerHTML === '$65')
-    {document.querySelector('.customer_order8').value = "BudaeJjiGae 5"}
-    else {document.querySelector('.customer_order8').value = "-"}
+    // if(document.querySelector('.priceshowing8').innerHTML === '$13'){
+    //   document.querySelector('.customer_order8').value = "BudaeJjiGae 1"}
+    // else if(document.querySelector('.priceshowing8').innerHTML === '$26')
+    // {document.querySelector('.customer_order8').value = "BudaeJjiGae 2"}
+    // else if(document.querySelector('.priceshowing8').innerHTML === '$39')
+    // {document.querySelector('.customer_order8').value = "BudaeJjiGae 3"}
+    // else if(document.querySelector('.priceshowing8').innerHTML === '$52')
+    // {document.querySelector('.customer_order8').value = "BudaeJjiGae 4"}
+    // else if(document.querySelector('.priceshowing8').innerHTML === '$65')
+    // {document.querySelector('.customer_order8').value = "BudaeJjiGae 5"}
+    // else {document.querySelector('.customer_order8').value = "-"}
 
-    //반반치킨
-    const countitem9 = document.querySelector(".countitem9").value;
-    const totalprice9 = banbanchicken*countitem9;
-    document.querySelector(".priceshowing9").innerHTML = "$"+totalprice9;
+    // //반반치킨
+    // const countitem9 = document.querySelector(".countitem9").value;
+    // const totalprice9 = banbanchicken*countitem9;
+    // document.querySelector(".priceshowing9").innerHTML = "$"+totalprice9;
 
-    if(document.querySelector('.priceshowing9').innerHTML === '$18'){
-      document.querySelector('.customer_order9').value = "BanBan 1"}
-    else if(document.querySelector('.priceshowing9').innerHTML === '$36')
-    {document.querySelector('.customer_order9').value = "BanBan 2"}
-    else if(document.querySelector('.priceshowing9').innerHTML === '$54')
-    {document.querySelector('.customer_order9').value = "BanBan 3"}
-    else if(document.querySelector('.priceshowing9').innerHTML === '$72')
-    {document.querySelector('.customer_order9').value = "BanBan 4"}
-    else if(document.querySelector('.priceshowing9').innerHTML === '$90')
-    {document.querySelector('.customer_order9').value = "BanBan 5"}
-    else {document.querySelector('.customer_order9').value = "-"}
+    // if(document.querySelector('.priceshowing9').innerHTML === '$18'){
+    //   document.querySelector('.customer_order9').value = "BanBan 1"}
+    // else if(document.querySelector('.priceshowing9').innerHTML === '$36')
+    // {document.querySelector('.customer_order9').value = "BanBan 2"}
+    // else if(document.querySelector('.priceshowing9').innerHTML === '$54')
+    // {document.querySelector('.customer_order9').value = "BanBan 3"}
+    // else if(document.querySelector('.priceshowing9').innerHTML === '$72')
+    // {document.querySelector('.customer_order9').value = "BanBan 4"}
+    // else if(document.querySelector('.priceshowing9').innerHTML === '$90')
+    // {document.querySelector('.customer_order9').value = "BanBan 5"}
+    // else {document.querySelector('.customer_order9').value = "-"}
 
     //공깃밥
     const countitem12 = document.querySelector(".countitem12").value;
@@ -240,19 +244,73 @@ const tteokgangjung = 3;
         {document.querySelector('.customer_order15').value = "tteokgangjung 5"}
         else {document.querySelector('.customer_order15').value = "-"}
 
+        //떡볶이
+        const countitem16 = document.querySelector(".countitem16").value;
+        const totalprice16 = tteokbokki*countitem16;
+        document.querySelector(".priceshowing16").innerHTML = "$"+totalprice16;
+    
+        if(document.querySelector('.priceshowing16').innerHTML === '$18'){
+          document.querySelector('.customer_order16').value = "tteokbokki 1"}
+        else if(document.querySelector('.priceshowing16').innerHTML === '$36')
+        {document.querySelector('.customer_order16').value = "tteokbokki 2"}
+        else if(document.querySelector('.priceshowing16').innerHTML === '$54')
+        {document.querySelector('.customer_order16').value = "tteokbokki 3"}
+        else if(document.querySelector('.priceshowing16').innerHTML === '$72')
+        {document.querySelector('.customer_order16').value = "tteokbokki 4"}
+        else if(document.querySelector('.priceshowing16').innerHTML === '$90')
+        {document.querySelector('.customer_order16').value = "tteokbokki 5"}
+        else {document.querySelector('.customer_order16').value = "-"}
+
+        //어묵탕
+        const countitem17 = document.querySelector(".countitem17").value;
+        const totalprice17 = emougtang*countitem17;
+        document.querySelector(".priceshowing17").innerHTML = "$"+totalprice17;
+    
+        if(document.querySelector('.priceshowing17').innerHTML === '$12'){
+          document.querySelector('.customer_order17').value = "emougtang 1"}
+        else if(document.querySelector('.priceshowing17').innerHTML === '$24')
+        {document.querySelector('.customer_order17').value = "emougtang 2"}
+        else if(document.querySelector('.priceshowing17').innerHTML === '$36')
+        {document.querySelector('.customer_order17').value = "emougtang 3"}
+        else if(document.querySelector('.priceshowing17').innerHTML === '$48')
+        {document.querySelector('.customer_order17').value = "emougtang 4"}
+        else if(document.querySelector('.priceshowing17').innerHTML === '$60')
+        {document.querySelector('.customer_order17').value = "emougtang 5"}
+        else {document.querySelector('.customer_order17').value = "-"}
+
+
+        //분식
+        const countitem18 = document.querySelector(".countitem18").value;
+        const totalprice18 = bunsik*countitem18;
+        document.querySelector(".priceshowing18").innerHTML = "$"+totalprice18;
+    
+        if(document.querySelector('.priceshowing18').innerHTML === '$35'){
+          document.querySelector('.customer_order18').value = "bunsikset 1"}
+        else if(document.querySelector('.priceshowing18').innerHTML === '$70')
+        {document.querySelector('.customer_order18').value = "bunsikset 2"}
+        else if(document.querySelector('.priceshowing18').innerHTML === '$105')
+        {document.querySelector('.customer_order18').value = "bunsikset 3"}
+        else if(document.querySelector('.priceshowing18').innerHTML === '$140')
+        {document.querySelector('.customer_order18').value = "bunsikset 4"}
+        else if(document.querySelector('.priceshowing18').innerHTML === '$175')
+        {document.querySelector('.customer_order18').value = "bunsikset 5"}
+        else {document.querySelector('.customer_order18').value = "-"}
+
+
+
     //합친가격 및 디테일
     
     const sumup = totalprice + totalprice2 + totalprice3 +
-    totalprice4 + totalprice5 + totalprice6 + totalprice7 +
-    totalprice8 + totalprice9 + totalprice12 + totalprice13 +
-    totalprice14 + totalprice15;
+    totalprice4 + totalprice5 + totalprice6 + 
+    totalprice12 + totalprice13 + totalprice14 + totalprice15 + 
+    totalprice16 + totalprice17 + totalprice18;
     
     document.querySelector('.sumup').value = sumup;
 
     const sumup2 = totalprice + totalprice2 + totalprice3 +
-    totalprice4 + totalprice5 + totalprice6 + totalprice7 +
-    totalprice8 + totalprice9 + totalprice12 + totalprice13 + 
-    totalprice14 + totalprice15;
+    totalprice4 + totalprice5 + totalprice6 + 
+    totalprice12 + totalprice13 + totalprice14 + totalprice15 + 
+    totalprice16 + totalprice17 + totalprice18;
 
     document.querySelector('.sumup2').value = sumup2;
 
@@ -296,24 +354,24 @@ const tteokgangjung = 3;
       document.querySelector('.sumup').value = ""
       document.querySelector('.sumup2').value = ""
     }
-    if(document.querySelector('.countitem7').value > 5) {
-      document.querySelector('.countitem7').value = ""
-      document.querySelector('.priceshowing7').innerHTML = ""
-      document.querySelector('.sumup').value = ""
-      document.querySelector('.sumup2').value = ""
-    }
-    if(document.querySelector('.countitem8').value > 5) {
-      document.querySelector('.countitem8').value = ""
-      document.querySelector('.priceshowing8').innerHTML = ""
-      document.querySelector('.sumup').value = ""
-      document.querySelector('.sumup2').value = ""
-    }
-    if(document.querySelector('.countitem9').value > 5) {
-      document.querySelector('.countitem9').value = ""
-      document.querySelector('.priceshowing9').innerHTML = ""
-      document.querySelector('.sumup').value = ""
-      document.querySelector('.sumup2').value = ""
-    }
+    // if(document.querySelector('.countitem7').value > 5) {
+    //   document.querySelector('.countitem7').value = ""
+    //   document.querySelector('.priceshowing7').innerHTML = ""
+    //   document.querySelector('.sumup').value = ""
+    //   document.querySelector('.sumup2').value = ""
+    // }
+    // if(document.querySelector('.countitem8').value > 5) {
+    //   document.querySelector('.countitem8').value = ""
+    //   document.querySelector('.priceshowing8').innerHTML = ""
+    //   document.querySelector('.sumup').value = ""
+    //   document.querySelector('.sumup2').value = ""
+    // }
+    // if(document.querySelector('.countitem9').value > 5) {
+    //   document.querySelector('.countitem9').value = ""
+    //   document.querySelector('.priceshowing9').innerHTML = ""
+    //   document.querySelector('.sumup').value = ""
+    //   document.querySelector('.sumup2').value = ""
+    // }
 
     if(document.querySelector('.countitem12').value > 5) {
       document.querySelector('.countitem12').value = ""
@@ -344,7 +402,30 @@ const tteokgangjung = 3;
       document.querySelector('.sumup').value = ""
       document.querySelector('.sumup2').value = ""
     }
- 
+
+    if(document.querySelector('.countitem16').value > 5) {
+      document.querySelector('.countitem16').value = ""
+      document.querySelector('.priceshowing16').innerHTML = ""
+      document.querySelector('.sumup').value = ""
+      document.querySelector('.sumup2').value = ""
+    }
+
+    if(document.querySelector('.countitem17').value > 5) {
+      document.querySelector('.countitem17').value = ""
+      document.querySelector('.priceshowing17').innerHTML = ""
+      document.querySelector('.sumup').value = ""
+      document.querySelector('.sumup2').value = ""
+    }
+
+    
+    if(document.querySelector('.countitem18').value > 5) {
+      document.querySelector('.countitem18').value = ""
+      document.querySelector('.priceshowing18').innerHTML = ""
+      document.querySelector('.sumup').value = ""
+      document.querySelector('.sumup2').value = ""
+    }
+
+
 
     //인사이드 리미트
 
