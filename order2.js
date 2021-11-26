@@ -15,7 +15,7 @@ const tteokbokki = 18;
 const emougtang = 12;
 const bunsik = 35;
 const tteokbokkiB = 32;
-const UyukSsambap = 55;
+const UyukSsambap = 27.5;
 const japchae = 25;
 const buchujeon = 8;
 
@@ -23,18 +23,18 @@ const buchujeon = 8;
 
     //우육쌈밥
     const countitem = document.querySelector(".countitem").value;
-    const totalprice = UyukSsambap*countitem;
+    const totalprice = Math.ceil(UyukSsambap*countitem);
     document.querySelector(".priceshowing").innerHTML = "$"+totalprice;
       
-      if(document.querySelector('.priceshowing').innerHTML === '$55'){
+      if(document.querySelector('.priceshowing').innerHTML === '$28'){
         document.querySelector('.customer_order').value = "Uyuk 1"}
-      else if(document.querySelector('.priceshowing').innerHTML === '$110')
+      else if(document.querySelector('.priceshowing').innerHTML === '$55')
       {document.querySelector('.customer_order').value = "Uyuk 2"}
-      else if(document.querySelector('.priceshowing').innerHTML === '$165')
+      else if(document.querySelector('.priceshowing').innerHTML === '$83')
       {document.querySelector('.customer_order').value = "Uyuk 3"}
-      else if(document.querySelector('.priceshowing').innerHTML === '$220')
+      else if(document.querySelector('.priceshowing').innerHTML === '$110')
       {document.querySelector('.customer_order').value = "Uyuk 4"}
-      else if(document.querySelector('.priceshowing').innerHTML === '$275')
+      else if(document.querySelector('.priceshowing').innerHTML === '$138')
       {document.querySelector('.customer_order').value = "Uyuk 5"}
       else {document.querySelector('.customer_order').value = "-"}
 
@@ -195,6 +195,24 @@ const buchujeon = 8;
     {document.querySelector('.customer_order12').value = "WhiteRice 5"}
     else {document.querySelector('.customer_order12').value = "-"}
 
+            //떡볶이
+            const countitem16 = document.querySelector(".countitem16").value;
+            const totalprice16 = tteokbokki*countitem16;
+            document.querySelector(".priceshowing16").innerHTML = "$"+totalprice16;
+        
+            if(document.querySelector('.priceshowing16').innerHTML === '$18'){
+              document.querySelector('.customer_order16').value = "tteokbokki 1"}
+            else if(document.querySelector('.priceshowing16').innerHTML === '$36')
+            {document.querySelector('.customer_order16').value = "tteokbokki 2"}
+            else if(document.querySelector('.priceshowing16').innerHTML === '$54')
+            {document.querySelector('.customer_order16').value = "tteokbokki 3"}
+            else if(document.querySelector('.priceshowing16').innerHTML === '$72')
+            {document.querySelector('.customer_order16').value = "tteokbokki 4"}
+            else if(document.querySelector('.priceshowing16').innerHTML === '$90')
+            {document.querySelector('.customer_order16').value = "tteokbokki 5"}
+            else {document.querySelector('.customer_order16').value = "-"}
+    
+
     //래디쉬 피클
     // const countitem13 = document.querySelector(".countitem13").value;
     // const totalprice13 = radishipickle*countitem13;
@@ -246,22 +264,7 @@ const buchujeon = 8;
         // {document.querySelector('.customer_order15').value = "tteokgangjung 5"}
         // else {document.querySelector('.customer_order15').value = "-"}
 
-        // //떡볶이
-        // const countitem16 = document.querySelector(".countitem16").value;
-        // const totalprice16 = tteokbokki*countitem16;
-        // document.querySelector(".priceshowing16").innerHTML = "$"+totalprice16;
-    
-        // if(document.querySelector('.priceshowing16').innerHTML === '$18'){
-        //   document.querySelector('.customer_order16').value = "tteokbokki 1"}
-        // else if(document.querySelector('.priceshowing16').innerHTML === '$36')
-        // {document.querySelector('.customer_order16').value = "tteokbokki 2"}
-        // else if(document.querySelector('.priceshowing16').innerHTML === '$54')
-        // {document.querySelector('.customer_order16').value = "tteokbokki 3"}
-        // else if(document.querySelector('.priceshowing16').innerHTML === '$72')
-        // {document.querySelector('.customer_order16').value = "tteokbokki 4"}
-        // else if(document.querySelector('.priceshowing16').innerHTML === '$90')
-        // {document.querySelector('.customer_order16').value = "tteokbokki 5"}
-        // else {document.querySelector('.customer_order16').value = "-"}
+
 
         // //어묵탕
         // const countitem17 = document.querySelector(".countitem17").value;
@@ -303,12 +306,12 @@ const buchujeon = 8;
     //합친가격 및 디테일
     
     const sumup = totalprice + totalprice2 + totalprice3 +
-    totalprice12;
+    totalprice12 + totalprice16;
     
     document.querySelector('.sumup').value = sumup;
 
     const sumup2 =totalprice + totalprice2 + totalprice3 +
-    totalprice12;
+    totalprice12 + totalprice16;
 
     document.querySelector('.sumup2').value = sumup2;
 
@@ -401,12 +404,12 @@ const buchujeon = 8;
     //   document.querySelector('.sumup2').value = ""
     // }
 
-    // if(document.querySelector('.countitem16').value > 5) {
-    //   document.querySelector('.countitem16').value = ""
-    //   document.querySelector('.priceshowing16').innerHTML = ""
-    //   document.querySelector('.sumup').value = ""
-    //   document.querySelector('.sumup2').value = ""
-    // }
+    if(document.querySelector('.countitem16').value > 5) {
+      document.querySelector('.countitem16').value = ""
+      document.querySelector('.priceshowing16').innerHTML = ""
+      document.querySelector('.sumup').value = ""
+      document.querySelector('.sumup2').value = ""
+    }
 
     // if(document.querySelector('.countitem17').value > 5) {
     //   document.querySelector('.countitem17').value = ""
