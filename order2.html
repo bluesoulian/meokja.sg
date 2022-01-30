@@ -45,23 +45,23 @@
             <div class="email"></div>
             </span>
         <div class="menus">
-            <div class="uyukssambap">
+            <!-- <div class="uyukssambap">
                 <div class="img"><img src="images/uyuk.jpg"></div>
                 <div class='select'>
                     <label>Uyuk SsamBap Set  <br> | $28  <br>| 2 servings</label> 
                     <input type="number" placeholder="0" min="0" max="4" class="countitem"  onclick="getprice()">
                     <span class="priceshowing"><sapn/>
                 </div>
-            </div>
-            <div class="japchae">
+            </div> -->
+            <!-- <div class="japchae">
                 <div class="img"><img src="images/JapChae.JPG"></div>
                 <div class="select">
                     <label>JapChae <br> | $25 <br>| 3 servings</label>
                     <input type="number" placeholder="0" min="0" max="5" class="countitem2"  onclick="getprice()">
                     <span class="priceshowing2"></span>
                 </div>
-            </div>
-            <div class="buchujeon">
+            </div> -->
+            <!-- <div class="buchujeon">
                 <div class="img"><img src="images/buchujeon.JPG"></div>
                 <div class="select">
                     <label>Buchu Jeon <br> | $8  <br> 2 pieces </label>
@@ -69,7 +69,7 @@
 
                     <span class="priceshowing3"></span>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="JjajangSet">
                 <div class="img"><img src="images/JjajangSet.JPEG"></div>
                 <div class="select">
@@ -118,6 +118,38 @@
                     <span class="priceshowing9"></span>
                 </div>
             </div> -->
+            <div class="kimchijjigae">
+                <div class="img"><img src="images/kimchijjigaeset.JPG"></div>
+                <div class="select">
+                    <label> ----Signature---- <br> Kimchi Jjigae Set  <br> | 1 serving <br>| $15</label> 
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem30" onclick="getprice()">
+                    <span class="priceshowing30"></span>
+                </div>
+            </div>
+            <div class="UyukDeopBab">
+                <div class="img"><img src="images/deopbab.JPG"></div>
+                <div class="select">
+                    <label> ----Signature---- <br> Uyuk Scallop DeopBap  <br> | 1 serving <br>| $12</label> 
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem31" onclick="getprice()">
+                    <span class="priceshowing31"></span>
+                </div>
+            </div>
+            <div class="KimBab">
+                <div class="img"><img src="images/kimbab.JPG"></div>
+                <div class="select">
+                    <label><br>Kimbap <br> | 1 roll <br>| $6</label> 
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem32" onclick="getprice()">
+                    <span class="priceshowing32"></span>
+                </div>
+            </div>
+            <div class="ChamchiKimBab">
+                <div class="img"><img src="images/kimbab.JPG"></div>
+                <div class="select">
+                    <label>Tuna Kimbap <br> | 1 roll  <br>| $7</label> 
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem33" onclick="getprice()">
+                    <span class="priceshowing33"></span>
+                </div>
+            </div>
 
             <div class="Whiterice">
                 <div class="img"><img src="images/whiterice.JPEG"></div>
@@ -135,7 +167,7 @@
                     <span class="priceshowing16"></span>
                 </div>
             </div>
-            <div class="Comingsoon1">
+            <!-- <div class="Comingsoon1">
                 <div class="img"><img src="images/logo.jpg"></div>
                 <div class="select">
                     <label>Comingsoon1 <br>   <br> releases soon</label>
@@ -143,7 +175,7 @@
 
                     <span class="priceshowing3"></span>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="radishpickle">
                 <div class="img"><img src="images/PickledMu.JPEG"></div>
                 <div class="select">
@@ -252,12 +284,10 @@
                     --- Slots will be removed once full --- 
                 </option>   
 
-              <option value="Get Excited for the new menu"> Chef's signiture is coming </option> 
-              <option value="Get Excited for the new menu"> Chef's signiture is coming  </option> 
-              <!-- <option value="Lunch Saturday 22 January 2022"> Lunch: Saturday, 22 January 2022 </option> 
-              <option value="Dinner Saturday 22 January 2022"> Dinner: Saturday, 22 January 2022 </option> 
-              <option value="Lunch Sunday 23 January 2022"> Lunch: Sunday, 23 January 2022 </option> 
-              <option value="Dinner Sunday 23 January 2022"> Dinner: Sunday, 23 January 2022 </option> -->
+              <option value="Lunch Saturday 5 January 2022"> Lunch: Saturday, 5 January 2022 </option> 
+              <option value="Dinner Saturday 5 January 2022"> Dinner: Saturday, 5 January 2022 </option> 
+              <option value="Lunch Sunday 6 January 2022"> Lunch: Sunday, 6 January 2022 </option> 
+              <option value="Dinner Sunday 6 January 2022"> Dinner: Sunday, 6 January 2022 </option>
             </select>
             
 
@@ -267,19 +297,19 @@
                 <option disabled selected value>
                     Select an Option
                 </option>
-                <!-- <option value="Lunch: Delivery 11:30am - 12:30pm"> Lunch: Delivery 11:30am - 12:30pm </option>
+                <option value="Lunch: Delivery 11:30am - 12:30pm"> Lunch: Delivery 11:30am - 12:30pm </option>
                 <option value="Lunch: Delivery 12:30pm - 1:30pm"> Lunch: Delivery 12:30pm - 1:30pm </option>
                 <option value="Lunch: PickUp 11:30am - 1:30pm"> Lunch: PickUp 11:30am - 1:30pm </option>
                 <option value="Dinner: Delivery 5:30pm - 7:30pm"> Dinner: Delivery 5:30pm - 7:30pm </option>
-                <option value="Dinner: PickUp 6:00pm - 8:00pm"> Dinner: PickUp 6:00pm - 8:00pm </option> -->
+                <option value="Dinner: PickUp 6:00pm - 8:00pm"> Dinner: PickUp 6:00pm - 8:00pm </option>
             </select>
         </div>
 
         <div class="check">
             <label>Your Order Details</label>
-            <input readonly type="text" name="customer_uyuk" class="customer_order" onclick="getprice()">
+            <!-- <input readonly type="text" name="customer_uyuk" class="customer_order" onclick="getprice()">
             <input readonly type="text" name="customer_japchae" class="customer_order2" onclick="getprice()">
-            <input readonly type="text" name="customer_jeon" class="customer_order3" onclick="getprice()">
+            <input readonly type="text" name="customer_jeon" class="customer_order3" onclick="getprice()"> -->
             <!-- <input readonly type="text" name="customer_jjajangset" class="customer_order4" onclick="getprice()">
             <input readonly type="text" name="customer_jjampongset" class="customer_order5" onclick="getprice()">
             <input readonly type="text" name="customer_jjamjjagset" class="customer_order6" onclick="getprice()"> -->
@@ -288,6 +318,10 @@
             <!-- <input readonly type="text" name="customer_banbanchicken" class="customer_order9" onclick="getprice()"> -->
             <input readonly type="text" name="customer_whiterice" class="customer_order12" onclick="getprice()">
             <input readonly type="text" name="customer_tteokbokki" class="customer_order16" onclick="getprice()">
+            <input readonly type="text" name="customer_kimchijjigaeset" class="customer_order30" onclick="getprice()">
+            <input readonly type="text" name="customer_uyuk" class="customer_order31" onclick="getprice()">
+            <input readonly type="text" name="customer_kimbab" class="customer_order32" onclick="getprice()">
+            <input readonly type="text" name="customer_chamchikimbab" class="customer_order33" onclick="getprice()">
             <!-- <input readonly type="text" name="customer_radishpickle" class="customer_order13" onclick="getprice()">
             <input readonly type="text" name="customer_friedkimchi" class="customer_order14" onclick="getprice()"> -->
             <!-- <input readonly type="text" name="customer_tteokgangjung" class="customer_order15" onclick="getprice()">
