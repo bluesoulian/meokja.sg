@@ -191,7 +191,7 @@
     flex-direction: column;
   }
   
-  .menus .uyukssambap {
+  /* .menus .uyukssambap {
     display: flex;
     flex-direction: column;
     flex: 0 0 33.333333%;
@@ -201,7 +201,7 @@
     display: flex;
     flex-direction: column;
     flex: 0 0 33.333333%;
-  }
+  } */
   
   /* .menus .uyukssambapset {
     display: flex;
@@ -244,10 +244,34 @@
   } */
 
 
-  .menus .buchujeon {
+  /* .menus .buchujeon {
     display: flex;
     flex-direction: column;
    
+  } */
+
+
+  .menus .kimchijjigae {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.333333%;
+  }
+
+  .menus .UyukDeopBab {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.333333%;
+  }
+
+  .menus .KimBab {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menus .ChamchiKimBab {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.333333%;
   }
   
   
@@ -260,14 +284,10 @@
   .menus .tteokbokki {
     display: flex;
     flex-direction: column;  
-    flex: 0 0 33.333333%;
+    
   }
 
-  .menus .Comingsoon1 {
-    display: flex;
-    flex-direction: column;
- 
-  }
+
 
   
   /* .menus .radishpickle {
