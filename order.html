@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <title>WeekDay Order</title>
+    <title>Ramadan Order</title>
 </head>
 <body>
     
@@ -31,11 +31,11 @@
             <br /><br />
             Opting for Delivery?<br>
             We charge $5 for deliveries within Yishun, Canberra and Sembawang and $10 outside of Yishun. 
-            Our delivery times for lunch include two slots - 11.30am to 1.30pm while dinner ranges from 5.30pm to 7.30pm.
+            Our delivery times for dinner - from 6.30pm to 8.30pm.
             The time frame allows our riders to reach to you safely while ensuring quality meals. 
             <br /><br />
             Opting for Pick-up?<br>
-            We are located along Yishun Ave 9 and pick-ups will only be available from 11.30am to 1.30pm (LUNCH) and 6pm to 8pm (DINNER). 
+            We are located along Yishun Ave 9 and pick-ups will only be available from 6pm to 7pm (DINNER). 
             <br /><br />
             For queries and large group orders (more than 5 per item), please contact us directly via;<br /><br />
             <a href="https://wa.me/6590677077" target="_blank"><i class="fab fa-whatsapp icons"></i> </a>
@@ -175,22 +175,47 @@
                     <span class="priceshowing18"></span>
                 </div>
             </div>
+            <div class="kimchijjigae">
+                <div class="img"><img src="images/kimchijjigaeset.JPG"></div>
+                <div class="select">
+                    <label> Kimchi Jjigae Set  <br> | 1 serving <br>| $17</label> 
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem19" onclick="getprice()">
+                    <span class="priceshowing19"></span>
+                </div>
+            </div>
+            <div class="Sundubujjigae">
+                <div class="img"><img src="images/sundubuset.jpg"></div>
+                <div class="select">
+                    <label> Sundubu Set <br> | 1 serving <br>| $15</label> 
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem20" onclick="getprice()">
+                    <span class="priceshowing20"></span>
+                </div>
+            </div>
+            <div class="KimBab">
+                <div class="img"><img src="images/kimbab.JPG"></div>
+                <div class="select">
+                    <label>Kimbap <br> | 1 roll <br>| $6</label> 
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem21" onclick="getprice()">
+                    <span class="priceshowing21"></span>
+                </div>
+            </div>
+            <div class="ChamchiKimBab">
+                <div class="img"><img src="images/kimbab.JPG"></div>
+                <div class="select">
+                    <label>Tuna Kimbap <br> | 1 roll  <br>| $7</label> 
+                    <input type="number" placeholder="0" min="0" max="5" class="countitem22" onclick="getprice()">
+                    <span class="priceshowing22"></span>
+                </div>
+            </div>
             <div class="comingsoon">
-                <div class="img"><img src="images/logo.jpg" ></div>
+                <div class="img"><img src="images/logo.jpg"></div>
                 <div class="select">
-                    <label> <br> Comingsoon</label> 
-                    <input type="number" placeholder="0" min="0" max="0" class="countitem19" onclick="getprice()">
-                    <span class="priceshowing19"></span>
+                    <label>Coming Soon <br>   <br>| $0</label> 
+                    <input type="number" placeholder="0" min="0" max="0" class="countitem23" onclick="getprice()">
+                    <span class="priceshowing23"></span>
                 </div>
             </div>
-            <div class="comingsoon2">
-                <div class="img"><img src="images/logo.jpg" ></div>
-                <div class="select">
-                    <label> Comingsoon</label> 
-                    <input type="number" placeholder="0" min="0" max="0" class="countitem19" onclick="getprice()">
-                    <span class="priceshowing19"></span>
-                </div>
-            </div>
+
         </div>
         
             <div class="totalbox2">
@@ -234,10 +259,10 @@
                 <option disabled selected value>
                     --- Slots will be removed once full --- 
                 </option>                          
-              <!-- <option value="Lunch Tuesday 29 March 2022" disabled> Lunch Closed: Tuesday, 29 March 2022 </option>
-              <option value="Dinner Tuesday 29 March 2022"> Dinner: Tuesday, 29 March 2022 </option>  -->
-              <!-- <option value="Lunch Wednesday 30 March 2022"> Lunch: Wednesday, 30 March 2022 </option>
-              <option value="Dinner Wednesday 30 March 2022"> Dinner: Wednesday, 30 March 2022 </option> -->
+              <option value="Dinner Tuesday 5 April 2022"> Dinner: Tuesday, 5 April 2022 </option> 
+              <option value="Dinner Wednesday 6 April 2022"> Dinner: Wednesday, 6 April 2022 </option>
+              <option value="Dinner Saturday 9 April 2022"> Dinner: Saturday, 9 April 2022 </option> 
+              <option value="Dinner Sunday 10 April 2022"> Dinner: Sunday, 10 April 2022 </option>
             </select>
             
 
@@ -247,10 +272,10 @@
                 <option disabled selected value>
                     Select an Option
                 </option>
-                <option value="Lunch: Delivery 11:30pm - 1:30pm"> Lunch: Delivery 11:30pm - 1:30pm </option>
-                <option value="Lunch: PickUp 11:30am - 1:30pm"> Lunch: PickUp 11:30am - 1:30pm </option>
-                <option value="Dinner: Delivery 5:30pm - 7:30pm"> Dinner: Delivery 5:30pm - 7:30pm </option>
-                <option value="Dinner: PickUp 6:00pm - 8:00pm"> Dinner: PickUp 6:00pm - 8:00pm </option>
+                <!-- <option value="Lunch: Delivery 11:30pm - 1:30pm"> Lunch: Delivery 11:30pm - 1:30pm </option>
+                <option value="Lunch: PickUp 11:30am - 1:30pm"> Lunch: PickUp 11:30am - 1:30pm </option> -->
+                <option value="Dinner: Delivery 5:30pm - 7:30pm"> Dinner: Delivery 6:30pm - 8:30pm </option>
+                <option value="Dinner: PickUp 6:00pm - 8:00pm"> Dinner: PickUp 6:00pm - 7:00pm </option>
             </select>
         </div>
 
@@ -272,7 +297,10 @@
             <input readonly type="text" name="customer_tteokbokki" class="customer_order16" onclick="getprice()">
             <input readonly type="text" name="customer_eomuktang" class="customer_order17" onclick="getprice()">
             <input readonly type="text" name="customer_bunsik" class="customer_order18" onclick="getprice()">
-     
+            <input readonly type="text" name="customer_kimchijjigaeset" class="customer_order19" onclick="getprice()">
+            <input readonly type="text" name="customer_Sundubujjigaeset" class="customer_order20" onclick="getprice()">
+            <input readonly type="text" name="customer_kimbab" class="customer_order21" onclick="getprice()">
+            <input readonly type="text" name="customer_tunakimbab" class="customer_order22" onclick="getprice()">
             
             <div class="totalbox">
                 <span>Sub Total ($):</span>
