@@ -23,10 +23,10 @@ const card16 = document.querySelector('.card16')
 const card17 = document.querySelector('.card17')
 const card18 = document.querySelector('.card18')
 // const card19 = document.querySelector('.card19')
-// const card20 = document.querySelector('.card20')
+const card20 = document.querySelector('.card20')
 // const card21 = document.querySelector('.card21')
 const card22 = document.querySelector('.card22')
-const card23 = document.querySelector('.card23')
+// const card23 = document.querySelector('.card23')
 const card24 = document.querySelector('.card24')
 const card25 = document.querySelector('.card25')
 
@@ -106,9 +106,9 @@ card18.addEventListener('click', ()=> {
 //     card19.classList.toggle('clicked')
 // });
 
-// card20.addEventListener('click', ()=> {
-//     card20.classList.toggle('clicked')
-// });
+card20.addEventListener('click', ()=> {
+    card20.classList.toggle('clicked')
+});
 
 // card21.addEventListener('click', ()=> {
 //     card21.classList.toggle('clicked')
@@ -118,9 +118,9 @@ card22.addEventListener('click', ()=> {
     card22.classList.toggle('clicked')
 });
 
-card23.addEventListener('click', ()=> {
-    card23.classList.toggle('clicked')
-});
+// card23.addEventListener('click', ()=> {
+//     card23.classList.toggle('clicked')
+// });
 
 card24.addEventListener('click', ()=> {
     card24.classList.toggle('clicked')
