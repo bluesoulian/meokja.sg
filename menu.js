@@ -29,6 +29,7 @@ const card22 = document.querySelector('.card22')
 // const card23 = document.querySelector('.card23')
 const card24 = document.querySelector('.card24')
 const card25 = document.querySelector('.card25')
+const card26 = document.querySelector('.card26')
 
 //메뉴조절
 onoff.addEventListener('click', ()=>{
@@ -128,4 +129,8 @@ card24.addEventListener('click', ()=> {
 
 card25.addEventListener('click', ()=> {
     card25.classList.toggle('clicked')
+});
+
+card26.addEventListener('click', ()=> {
+    card26.classList.toggle('clicked')
 });
